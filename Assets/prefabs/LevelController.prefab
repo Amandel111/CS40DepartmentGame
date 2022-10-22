@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5852442912909697193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5852442912909697207}
+  - component: {fileID: 5852442912909697206}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5852442912909697207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852442912909697193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1209.2036, y: 525.9994, z: -268.4478}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5852442912909697206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852442912909697193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae59ade5ba65c224295f7cdf6b124e7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionsCS111:
+  - question: Select the correct Hello World printline in Python
+    answerOne: print("Hello World")
+    answerTwo: printf("Hello World");
+    answerThree: Console.Writeline("HelloWorld");
+    answerFour: println("Hello World")
+    correctAnswer: print("Hello World")
+    classSubjectTrigger: finishedCS111
+  - question: Select the correct Hello World printline in C
+    answerOne: Console.WriteLine("Hello World");
+    answerTwo: printf("Hello World");
+    answerThree: printf(Hello world);
+    answerFour: Hello World
+    correctAnswer: printf("Hello World");
+    classSubjectTrigger: finishedCS111
+  questionsCS231:
+  - question: f1(n) = n^0.5, what is O(f1)?
+    answerOne: O(0.5^n)
+    answerTwo: O(n^0.5)
+    answerThree: O(n)
+    answerFour: O(logn)
+    correctAnswer: O(n)
+    classSubjectTrigger: finishedCS231
+  - question: "f2(n) = 3n log(n) - n + 4, what is \u03A9(f2)"
+    answerOne: "\u03A9(nlog(n) - n)"
+    answerTwo: "\u03A9(nlogn)"
+    answerThree: "\u03A9(logn)"
+    answerFour: "\u03A9(n)"
+    correctAnswer: "\u03A9(n)"
+    classSubjectTrigger: finishedCS231
+  - question: f1 = n^(1/3) + lg(n), f2 = n^(3.1), f3 = n^3*lg(n)
+    answerOne: f1 < f2 < f3
+    answerTwo: f1 < f3 < f2
+    answerThree: f3 < f1 < f2
+    answerFour: f2 < f3 < f1
+    correctAnswer: f1 < f3 < f2
+    classSubjectTrigger: finishedCS231
+  questionsCS240:
+  - question: This is a test question for CS240
+    answerOne: CS240 answer 1
+    answerTwo: correct answer
+    answerThree: CS240 ans3
+    answerFour: CS240 ans 4
+    correctAnswer: correct answer
+    classSubjectTrigger: finishedCS40
+  questionsCS304:
+  - question: Which MySQL statement is used to select data from a database?
+    answerOne: GET
+    answerTwo: EXTRACT
+    answerThree: SELECT
+    answerFour: OPEN
+    correctAnswer: SELECT
+    classSubjectTrigger: finishedCS304
+  - question: With MySQL, how do you select all the records from a table named "Persons"
+      where the value of the column "FirstName" starts with an "a"?
+    answerOne: "SELECT * FROM Persons WHERE FirstName LIKE \u2018a%\u2019"
+    answerTwo: "SELECT * FROM Persons WHERE FirstName = \u2018a\u2019 "
+    answerThree: "SELECT * FROM Persons WHERE FirstName LIKE \u2018%a\u2019"
+    answerFour: "SELECT * FROM Persons WHERE FirstName LIKE \u2018%a%\u2019 "
+    correctAnswer: "SELECT * FROM Persons WHERE FirstName LIKE \u2018a%\u2019"
+    classSubjectTrigger: finishedCS304
+  - question: 'Which MySQL statement is used to return only different values? '
+    answerOne: SELECT DIFFERENT
+    answerTwo: SELECT UNIQUE
+    answerThree: SELECT DISTINCT
+    answerFour: SELECT DEFINITE
+    correctAnswer: SELECT DISTINCT
+    classSubjectTrigger: finishedCS304
+  - question: 'Which MySQL keyword is used to sort the result set? '
+    answerOne: ORDER BY
+    answerTwo: 'SORT '
+    answerThree: 'SORT BY '
+    answerFour: 'ORDER '
+    correctAnswer: ORDER BY
+    classSubjectTrigger: finishedCS304
+  - question: 'A foreign key is '
+    answerOne: 'Is not a key '
+    answerTwo: 'A key in some other database '
+    answerThree: A key in some other table
+    answerFour: 'A key in some other column '
+    correctAnswer: A key in some other table
+    classSubjectTrigger: finishedCS304
+  - question: 'The HAVING clause '
+    answerOne: 'filters ROWS '
+    answerTwo: filters COLUMNS
+    answerThree: filters GROUPS
+    answerFour: 'filters COUNTS '
+    correctAnswer: filters GROUPS
+    classSubjectTrigger: finishedCS304
+  questionsMAS:
+  - question: MAS q
+    answerOne: MAS ans1
+    answerTwo: MAs a2
+    answerThree: correct answer
+    answerFour: MAS a4
+    correctAnswer: correct answer
+    classSubjectTrigger: finishedMAS
+  currentQuestion:
+    question: 
+    answerOne: 
+    answerTwo: 
+    answerThree: 
+    answerFour: 
+    correctAnswer: 
+    classSubjectTrigger: 
+  eventsCompleted: 0
+  TOTAL_EVENTS: 10
+  cs240Finished: 0
+  cs304Finished: 0
+  cs111Finished: 0
+  cs231Finished: 0
+  masFinished: 0
+  helpedCS111: 0
+  helpedCS231: 0
+  helpedCS304: 0
+  helpedCS240: 0
+  answeredCounter: 0
+  helpedCounter: 0
+  previousScene: 
