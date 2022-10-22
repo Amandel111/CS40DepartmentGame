@@ -11,32 +11,14 @@ public class CS240Controller : MonoBehaviour
     bool startedConvo;
     Animator playerAnim;
     Transform playerTransform;
+    public float dialogueRange = 4;
     void Start()
     {
         eventTracker = FindObjectOfType<LevelOneController>();
         cs240Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
 
-        /*
-        switch (eventTracker.previousScene)
-        {
-            case "CS231":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS304":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS111":
-                playerTransform.position = new Vector3();
-                break;
-            case "Hub":
-                playerTransform.position = new Vector3();
-                break;
-            case "MainMenu":
-                playerTransform.position = new Vector3();
-                break;
-        }
-        */
+        playerTransform = FindObjectOfType<PlayerController>().transform;
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
     }
 
@@ -55,6 +37,14 @@ public class CS240Controller : MonoBehaviour
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
                 startedConvo = false;
+            }
+            if (Vector2.Distance(transform.position, playerTransform.position) > dialogueRange)
+            {
+                ConversationManager.Instance.SetBool("collidedWithDialogue", false);
+                ConversationManager.Instance.SetBool("isTalking", false);
+                ConversationManager.Instance.EndConversation();
+                startedConvo = false;
+                playerAnim.SetBool("isTalking", false);
             }
         }
     }

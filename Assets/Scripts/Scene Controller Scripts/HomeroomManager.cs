@@ -13,7 +13,8 @@ public class HomeroomManager : MonoBehaviour
     bool startedConvo;
     LevelOneController eventTracker;
     Animator playerAnim;
-    //Transform playerTransform;
+    Transform playerTransform;
+    public float dialogueRange = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class HomeroomManager : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         eventTracker = FindObjectOfType<LevelOneController>();
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
-        //playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
+        playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
 
 
     }
@@ -54,8 +55,16 @@ public class HomeroomManager : MonoBehaviour
                 Debug.Log("started convo: false");
                 startedConvo = false;
             }
+            if (Vector2.Distance(transform.position, playerTransform.position) > dialogueRange)
+            {
+                ConversationManager.Instance.SetBool("collidedWithDialogue", false);
+                ConversationManager.Instance.SetBool("isTalking", false);
+                ConversationManager.Instance.EndConversation();
+                startedConvo = false;
+                playerAnim.SetBool("isTalking", false);
+            }
         }
-        
+
 
     }
     public void submitAssignment()

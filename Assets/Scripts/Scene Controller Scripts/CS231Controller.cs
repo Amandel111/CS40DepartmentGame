@@ -11,39 +11,13 @@ public class CS231Controller : MonoBehaviour
     bool startedConvo;
 
     Transform playerTransform;
+    public float dialogueRange = 4;
     void Start()
     {
         eventTracker = FindObjectOfType<LevelOneController>();
         cs231Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
-
-        //if (eventTracker.previousScene == "CS231")
-        //{
-        //   playerTransform.position = new Vector3();
-        //
-        //}
-        /*
-        switch (eventTracker.previousScene)
-        {
-            case "Hub":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS304":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS111":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS240":
-                playerTransform.position = new Vector3();
-                break;
-            case "MainMenu":
-                playerTransform.position = new Vector3();
-                break;
-        }
-
-        */
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
     }
 
@@ -62,6 +36,14 @@ public class CS231Controller : MonoBehaviour
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
                 startedConvo = false;
+            }
+            if (Vector2.Distance(transform.position, playerTransform.position) > dialogueRange)
+            {
+                ConversationManager.Instance.SetBool("collidedWithDialogue", false);
+                ConversationManager.Instance.SetBool("isTalking", false);
+                ConversationManager.Instance.EndConversation();
+                startedConvo = false;
+                playerAnim.SetBool("isTalking", false);
             }
         }
     }

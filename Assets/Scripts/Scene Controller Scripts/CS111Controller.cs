@@ -9,6 +9,7 @@ public class CS111Controller : MonoBehaviour
     bool startedConvo;
     Animator playerAnim;
     Transform playerTransform;
+    public float dialogueRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,26 +18,6 @@ public class CS111Controller : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
 
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
-        /*
-        switch (eventTracker.previousScene)
-        {
-            case "CS231":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS304":
-                playerTransform.position = new Vector3();
-                break;
-            case "Hub":
-                playerTransform.position = new Vector3();
-                break;
-            case "CS240":
-                playerTransform.position = new Vector3();
-                break;
-            case "MainMenu":
-                playerTransform.position = new Vector3();
-                break;
-        }
-        */
 
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
     }
@@ -58,6 +39,14 @@ public class CS111Controller : MonoBehaviour
             {
                 startedConvo = false;
             }
+            if (Vector2.Distance(transform.position, playerTransform.position) > dialogueRange)
+            {
+                ConversationManager.Instance.SetBool("collidedWithDialogue", false);
+                ConversationManager.Instance.SetBool("isTalking", false);
+                ConversationManager.Instance.EndConversation();
+                startedConvo = false;
+                playerAnim.SetBool("isTalking", false);
+            }
         }
     }
 
@@ -66,7 +55,7 @@ public class CS111Controller : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && !startedConvo)
         {
             startedConvo = true;
-            ConversationManager.Instance.StartConversation(cs111Convo); //figure out how to prevent convo from restarting --> maybe && !(talkingAnimation active) u can interact w npc
+            ConversationManager.Instance.StartConversation(cs111Convo); 
             if (eventTracker.cs111Finished) //more elegant way to do this
             {
                 ConversationManager.Instance.SetBool("finishedCS111", true);

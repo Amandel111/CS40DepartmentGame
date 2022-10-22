@@ -41,20 +41,11 @@ public class CS304NPCController : MonoBehaviour
 
             if (Vector2.Distance(transform.position, playerTransform.position) > dialogueRange)
             {
-                /*
-                Debug.Log("off");
-                //only want player to talk if in certain range
-               // Debug.Log("collided before: " + ConversationManager.Instance.GetBool("collidedWithDialogue"));
-                //Debug.Log("talking before:" + ConversationManager.Instance.GetBool("isTalking"));
                 ConversationManager.Instance.SetBool("collidedWithDialogue", false);
                 ConversationManager.Instance.SetBool("isTalking", false);
                 ConversationManager.Instance.EndConversation();
                 startedConvo = false;
-               // ConversationManager.Instance.SetBool("collidedWithDialogue", false);
-                //Debug.Log("Collided before:" + ConversationManager.Instance.GetBool("collidedWithDialogue"));
-                //Debug.Log("Colldied after: " + ConversationManager.Instance.GetBool("isTalking"));
                 playerAnim.SetBool("isTalking", false);
-                */
             }
         }
     }
