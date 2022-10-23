@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7cebe55d7fba24428ed463c5ef91c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueRange: 4
+  dialogueRange: 2
 --- !u!1 &1198805499
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,14 +987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1520265837609760944, guid: 4680746139098e14cb6ad3f52d4a1f4d, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1520265837609760944, guid: 4680746139098e14cb6ad3f52d4a1f4d, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1280892417
-      objectReference: {fileID: 0}
     - target: {fileID: 1520265837609760948, guid: 4680746139098e14cb6ad3f52d4a1f4d, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1545,6 +1537,54 @@ PrefabInstance:
     - target: {fileID: 5852442912909697193, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: m_Name
       value: LevelController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].question
+      value: 'f1(n) = n^0.5. Select the correct choice:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].question
+      value: 'f1(n) = 2*n^2. Select the most correct choice:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerOne
+      value: "\u03A9(f1) = n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerTwo
+      value: "\u03A9(f1) = nlog(n)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerOne
+      value: O(f1) = n^2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerTwo
+      value: O(f1) = 2*n^2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerFour
+      value: "\u03A9(f1) = logn"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerFour
+      value: O(f1) = sqrt(n)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerThree
+      value: "\u03A9(f1) = n^2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerThree
+      value: O(f1) = logn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].correctAnswer
+      value: "\u03A9(f1) = logn"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].correctAnswer
+      value: O(f1) = n^2
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697207, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: m_RootOrder

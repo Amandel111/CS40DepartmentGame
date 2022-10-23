@@ -58,6 +58,27 @@ MonoBehaviour:
     answerFour: Hello World
     correctAnswer: printf("Hello World");
     classSubjectTrigger: finishedCS111
+  - question: Select the correct Hello World printline in C++
+    answerOne: cout >> "Hello World";
+    answerTwo: cout << "Hello World";
+    answerThree: cin >> "Hello World";
+    answerFour: cin << "Hello World";
+    correctAnswer: cout >> "Hello World";
+    classSubjectTrigger: finishedCS111
+  - question: Select the correct Hello World printline in Java
+    answerOne: Console.WriteLine("Hello World");
+    answerTwo: printf("Hello World");
+    answerThree: print("Hello World);
+    answerFour: println("Hello World");
+    correctAnswer: println("Hello World");
+    classSubjectTrigger: finishedCS111
+  - question: Select the correct Hello World printline in C#
+    answerOne: Console.WriteLine("Hello World");
+    answerTwo: print("Hello World");
+    answerThree: printf("Hello world);
+    answerFour: println("Hello World");
+    correctAnswer: Console.WriteLine("Hello World");
+    classSubjectTrigger: finishedCS111
   questionsCS231:
   - question: f1(n) = n^0.5, what is O(f1)?
     answerOne: O(0.5^n)
@@ -80,13 +101,55 @@ MonoBehaviour:
     answerFour: f2 < f3 < f1
     correctAnswer: f1 < f3 < f2
     classSubjectTrigger: finishedCS231
+  - question: 'Select the running time with the fastest growth rate:'
+    answerOne: log(n)
+    answerTwo: n
+    answerThree: sqrt(n)
+    answerFour: n^1.5
+    correctAnswer: n^1.5
+    classSubjectTrigger: finishedCS231
+  - question: 'Select the running time that is most efficient:'
+    answerOne: n
+    answerTwo: sqrt(n)
+    answerThree: logn
+    answerFour: n
+    correctAnswer: log(n)
+    classSubjectTrigger: finishedCS231
   questionsCS240:
-  - question: This is a test question for CS240
-    answerOne: CS240 answer 1
-    answerTwo: correct answer
-    answerThree: CS240 ans3
-    answerFour: CS240 ans 4
-    correctAnswer: correct answer
+  - question: How many bits are in a byte?
+    answerOne: 8 bits
+    answerTwo: 4 bits
+    answerThree: 1 bit
+    answerFour: 16 bits
+    correctAnswer: 8 bits
+    classSubjectTrigger: finishedCS40
+  - question: What is 2^40?
+    answerOne: ~Billion
+    answerTwo: ~Trillion
+    answerThree: ~Million
+    answerFour: ~Quadrillion
+    correctAnswer: ~Trillion
+    classSubjectTrigger: finishedCS40
+  - question: What is 2^50?
+    answerOne: ~Billion
+    answerTwo: ~Quadrillion
+    answerThree: ~Trillion
+    answerFour: ~Quintillion
+    correctAnswer: ~Quadrillion
+    classSubjectTrigger: finishedCS40
+  - question: How many values can be represented in 8 bits?
+    answerOne: 256
+    answerTwo: 255
+    answerThree: 128
+    answerFour: 8
+    correctAnswer: 256
+    classSubjectTrigger: finishedCS40
+  - question: How many bytes are in a hexidecimal character?
+    answerOne: 16
+    answerTwo: 6
+    answerThree: 2
+    answerFour: 8
+    correctAnswer: 8
     classSubjectTrigger: finishedCS40
   questionsCS304:
   - question: Which MySQL statement is used to select data from a database?
@@ -149,7 +212,7 @@ MonoBehaviour:
     correctAnswer: 
     classSubjectTrigger: 
   eventsCompleted: 0
-  TOTAL_EVENTS: 10
+  TOTAL_EVENTS: 8
   cs240Finished: 0
   cs304Finished: 0
   cs111Finished: 0
@@ -161,4 +224,3 @@ MonoBehaviour:
   helpedCS240: 0
   answeredCounter: 0
   helpedCounter: 0
-  previousScene: 
