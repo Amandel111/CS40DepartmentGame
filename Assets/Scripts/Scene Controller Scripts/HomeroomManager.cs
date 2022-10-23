@@ -15,6 +15,7 @@ public class HomeroomManager : MonoBehaviour
     Animator playerAnim;
     Transform playerTransform;
     public float dialogueRange = 4;
+    Animator NPCAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class HomeroomManager : MonoBehaviour
         eventTracker = FindObjectOfType<LevelOneController>();
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
+        NPCAnim = GameObject.FindGameObjectWithTag("Homeroom").GetComponent<Animator>();
 
 
     }
@@ -46,10 +48,12 @@ public class HomeroomManager : MonoBehaviour
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
                 playerAnim.SetBool("isTalking", true);
+                NPCAnim.SetBool("isTalking", true);
             }
             else
             {
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
@@ -63,6 +67,7 @@ public class HomeroomManager : MonoBehaviour
                 ConversationManager.Instance.EndConversation();
                 startedConvo = false;
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
         }
 

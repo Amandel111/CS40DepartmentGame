@@ -287,9 +287,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1014899332}
   - component: {fileID: 1014899331}
-  - component: {fileID: 1014899330}
   - component: {fileID: 1014899329}
   - component: {fileID: 1014899333}
+  - component: {fileID: 1014899334}
+  - component: {fileID: 1014899330}
   m_Layer: 0
   m_Name: Homeroom Teacher
   m_TagString: Homeroom
@@ -318,8 +319,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1014899330
-BoxCollider2D:
+--- !u!60 &1014899330
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -335,15 +336,63 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.68, y: 1.07}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.03, y: -0.195}
+      - {x: 0.01, y: -0.195}
+      - {x: 0.17, y: -0.185}
+      - {x: 0.19, y: -0.39499998}
+      - {x: 0.14, y: -0.42499998}
+      - {x: 0.17999999, y: -0.53499997}
+      - {x: 0.32999998, y: -0.53499997}
+      - {x: 0.35999998, y: -0.515}
+      - {x: 0.37, y: -0.45499998}
+      - {x: 0.37, y: -0.415}
+      - {x: 0.29, y: -0.36499998}
+      - {x: 0.26999998, y: -0.195}
+      - {x: 0.5, y: -0.185}
+      - {x: 0.64, y: -0.175}
+      - {x: 0.69, y: -0.125}
+      - {x: 0.82, y: -0.114999995}
+      - {x: 0.84, y: -0.065}
+      - {x: 0.84, y: 0.024999999}
+      - {x: 0.78999996, y: 0.074999996}
+      - {x: 0.64, y: 0.145}
+      - {x: 0.48999998, y: 0.255}
+      - {x: 0.35999998, y: 0.42499998}
+      - {x: 0.31, y: 0.435}
+      - {x: -0.17999999, y: 0.42499998}
+      - {x: -0.26999998, y: 0.435}
+      - {x: -0.32, y: 0.435}
+      - {x: -0.42999998, y: 0.225}
+      - {x: -0.62, y: 0.074999996}
+      - {x: -0.7, y: 0.035}
+      - {x: -0.75, y: -0.024999999}
+      - {x: -0.75, y: -0.085}
+      - {x: -0.72999996, y: -0.13499999}
+      - {x: -0.61, y: -0.13499999}
+      - {x: -0.55, y: -0.195}
+      - {x: -0.22, y: -0.195}
+      - {x: -0.21, y: -0.325}
+      - {x: -0.32999998, y: -0.42499998}
+      - {x: -0.32, y: -0.48499998}
+      - {x: -0.29, y: -0.53499997}
+      - {x: -0.14, y: -0.53499997}
+      - {x: -0.089999996, y: -0.435}
+      - {x: -0.11, y: -0.355}
+    - - {x: 0.62, y: 0.044999998}
+      - {x: 0.59999996, y: 0.055}
+      - {x: 0.59, y: 0.055}
+      - {x: 0.62, y: 0.015}
+      - {x: 0.64, y: 0.005}
+      - {x: 0.64, y: -0.005}
+      - {x: 0.64, y: 0.005}
 --- !u!212 &1014899331
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -384,7 +433,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c2a5be59b4a36648a911535c6e46ab8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -422,6 +471,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRange: 2
+--- !u!95 &1014899334
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014899328}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e2305d3d934a804a854dc3174ffbc27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1198805499
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,19 +996,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 14
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"receivedAssignment","CheckType":0,"RequiredValue":false},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"isTalking","CheckType":0,"RequiredValue":true}],"NodeUID":3},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"receivedAssignment","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"isTalking","CheckType":0,"RequiredValue":true}],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":122.699982,"yPos":38},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":431.7,"yPos":20},"ID":2,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-32.5,"yPos":551},"ID":6,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"receivedAssignment","Value":true},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Thank
-    you!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"isFinished","CheckType":0,"RequiredValue":true}],"NodeUID":12},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":332.5,"yPos":231},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[9],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":563.5,"yPos":269},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isFinished","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"receivedAssignment","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":279.099976,"yPos":-75},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
-    you like to start a conversation with your homeroom teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":90.69998,"yPos":128},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Stuck
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"receivedAssignment","CheckType":0,"RequiredValue":false},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"isTalking","CheckType":0,"RequiredValue":true}],"NodeUID":3},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"receivedAssignment","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"isTalking","CheckType":0,"RequiredValue":true}],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":40.80002,"yPos":217},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":349.800049,"yPos":199},"ID":2,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-114.399963,"yPos":730},"ID":6,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"receivedAssignment","Value":true},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Thank
+    you!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"isFinished","CheckType":0,"RequiredValue":true}],"NodeUID":12},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":250.600037,"yPos":410},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[9],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":481.600037,"yPos":448},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isFinished","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"receivedAssignment","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":197.200012,"yPos":104},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
+    you like to start a conversation with your homeroom teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":8.800018,"yPos":307},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Stuck
     on your homework? ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Homeroom
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":87.69998,"yPos":244},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Wellesley
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":5.80001831,"yPos":423},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Wellesley
     has resources! Ask around, go to office hours, collaborate!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Homeroom
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":82.5,"yPos":391},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":0.6000366,"yPos":570},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"The
     CS111 Office Hours might be a good place to start!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Homeroom
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":331.5,"yPos":109},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Want
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":249.600037,"yPos":288},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Want
     to submit your homework?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Homeroom
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":286.5,"yPos":359},"ID":12,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"It
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":204.600037,"yPos":538},"ID":12,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"It
     isn''t quite finished yet. If you''re stuck, peers right outside can help! ","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Homeroom
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":540.5,"yPos":362},"ID":13,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Submission
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":458.600037,"yPos":541},"ID":13,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Submission
     successful!","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Homeroom
     Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -964,7 +1032,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1014899333}
+        m_TargetAssemblyTypeName: HomeroomManager, Assembly-CSharp
+        m_MethodName: submitAssignment
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1468562050
 Transform:
   m_ObjectHideFlags: 0
@@ -1228,7 +1308,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1876867326
 MonoBehaviour:
@@ -1285,7 +1365,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 9
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1876867329
 MonoBehaviour:
@@ -1323,7 +1403,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 5
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1876867331
 MonoBehaviour:
@@ -1342,7 +1422,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1876867332
 MonoBehaviour:
@@ -1361,7 +1441,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1876867333
 MonoBehaviour:
@@ -1430,7 +1510,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 13
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: a078e14f8bfba9e40b0a3feb1bab9897, type: 3}
   Audio: {fileID: 0}
 --- !u!1001 &2052009437
 PrefabInstance:
@@ -1537,54 +1617,6 @@ PrefabInstance:
     - target: {fileID: 5852442912909697193, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: m_Name
       value: LevelController
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[0].question
-      value: 'f1(n) = n^0.5. Select the correct choice:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[1].question
-      value: 'f1(n) = 2*n^2. Select the most correct choice:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[0].answerOne
-      value: "\u03A9(f1) = n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[0].answerTwo
-      value: "\u03A9(f1) = nlog(n)"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[1].answerOne
-      value: O(f1) = n^2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[1].answerTwo
-      value: O(f1) = 2*n^2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[0].answerFour
-      value: "\u03A9(f1) = logn"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[1].answerFour
-      value: O(f1) = sqrt(n)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[0].answerThree
-      value: "\u03A9(f1) = n^2"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[1].answerThree
-      value: O(f1) = logn
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[0].correctAnswer
-      value: "\u03A9(f1) = logn"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
-      propertyPath: questionsCS231.Array.data[1].correctAnswer
-      value: O(f1) = n^2
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697207, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: m_RootOrder

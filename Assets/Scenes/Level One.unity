@@ -391,7 +391,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 20
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &100100820
 MonoBehaviour:
@@ -422,7 +422,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 17
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &100100821
 MonoBehaviour:
@@ -479,7 +479,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 14
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &100100824
 MonoBehaviour:
@@ -498,7 +498,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 13
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &100100825
 MonoBehaviour:
@@ -517,7 +517,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &100100826
 MonoBehaviour:
@@ -586,7 +586,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &100100829
 MonoBehaviour:
@@ -1275,6 +1275,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2087757784}
     m_Modifications:
+    - target: {fileID: 1423413459, guid: 09755868eed93284f9a508233d3a9aca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423413461, guid: 09755868eed93284f9a508233d3a9aca, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423413461, guid: 09755868eed93284f9a508233d3a9aca, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1665507743
+      objectReference: {fileID: 0}
     - target: {fileID: 56807539065586688, guid: 09755868eed93284f9a508233d3a9aca, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1319,6 +1331,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 56807539065586691, guid: 09755868eed93284f9a508233d3a9aca, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a23550b8072f07e4aab80c5677affe0d, type: 3}
     - target: {fileID: 56807539065586693, guid: 09755868eed93284f9a508233d3a9aca, type: 3}
       propertyPath: m_Name
       value: squareTable (3)
@@ -3745,8 +3761,9 @@ GameObject:
   - component: {fileID: 1240333368}
   - component: {fileID: 1240333366}
   - component: {fileID: 1240333370}
-  - component: {fileID: 1240333367}
   - component: {fileID: 1240333372}
+  - component: {fileID: 1240333371}
+  - component: {fileID: 1240333367}
   m_Layer: 0
   m_Name: cs111NPC
   m_TagString: CS111
@@ -3767,28 +3784,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 21
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":234.200012,"yPos":153},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":470.2,"yPos":151},"ID":7,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":47.2000122,"yPos":459},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
-    you help me on CS111??","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":288.2,"yPos":456},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    can help you with CS111!","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":220.200012,"yPos":729},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"If
-    you''re stuck on C, you can just submit it in Python, vice-versa!","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":464.2,"yPos":731},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Consider
-    using a print function in the Hello World Assignment","parentUIDs":[14],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"cs111Finished","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"hasHelped","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":361.3,"yPos":29},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
-    you like to start a conversation with your classmate?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs111Finished","CheckType":0,"RequiredValue":true}],"NodeUID":20},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":149.200012,"yPos":228},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Hi!!
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":18.9000244,"yPos":142},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":254.900024,"yPos":140},"ID":7,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-168.099976,"yPos":448},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Can
+    you help me on CS111??","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":72.9000244,"yPos":445},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    can help you with CS111!","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":4.90002441,"yPos":718},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    you''re stuck on C, you can just submit it in Python, vice-versa!","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":248.900024,"yPos":720},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Consider
+    using a print function in the Hello World Assignment","parentUIDs":[14],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"cs111Finished","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"hasHelped","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":146,"yPos":18},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
+    you like to start a conversation with your classmate?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs111Finished","CheckType":0,"RequiredValue":true}],"NodeUID":20},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-66.0999756,"yPos":217},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Hi!!
     Just so you know, I am NOT a circle. But modern graphics aren''t strong enough
     to represent me...","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs111Finished","CheckType":0,"RequiredValue":false}],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs111Finished","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":false}],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":150.200012,"yPos":331},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyways
+    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs111Finished","CheckType":0,"RequiredValue":false}],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs111Finished","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":false}],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-65.0999756,"yPos":320},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyways
     Tri, what''s up?","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":33.2000122,"yPos":529},"ID":12,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"I
+    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-182.099976,"yPos":518},"ID":12,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"I
     wish I could but I''m super stuck too...let me know if you figure it out!","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    the Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":306.2,"yPos":525},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+    the Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":90.9000244,"yPos":514},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"No
     way. That would be a huge lifesaver!! I haven''t been able to go to office hours
     myself...","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":312.2,"yPos":619},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":96.9000244,"yPos":608},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"But
     I still want to figure the homework out on my own, so maybe just give me some
     basic hints!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":324.2,"yPos":843},"ID":17,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Ahhhhhh
+    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":108.900024,"yPos":832},"ID":17,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Ahhhhhh
     I see! Thank you so much for the advice, you''re truly a role model for me in
     CS!","parentUIDs":[15,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    the Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":447.2,"yPos":295},"ID":20,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Anyways,
+    the Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":231.900024,"yPos":284},"ID":20,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Anyways,
     I have a fun fact about the Wellesley CS Department - did you know:...","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
     The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.3}]}'
   saveVersion: 110
@@ -3815,32 +3832,25 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
---- !u!61 &1240333367
-BoxCollider2D:
+--- !u!95 &1240333367
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240333365}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 18.79}
-    newSize: {x: 10.8, y: 18.79}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 18.79}
-  m_EdgeRadius: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93409114ad29b1e4fa96b78353addc37, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1240333368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3881,7 +3891,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 05988afc99ddc9841bbaac2b89449054, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98f7a915bf0edb54088f41f068e7ea36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3901,7 +3911,7 @@ Transform:
   m_GameObject: {fileID: 1240333365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -26.734917, y: -0.8299303, z: 1232.7836}
-  m_LocalScale: {x: 0.1995, y: 0.1995, z: 0.1995}
+  m_LocalScale: {x: 0.99735993, y: 0.99735993, z: 0.99735993}
   m_Children:
   - {fileID: 1986576494}
   m_Father: {fileID: 1587198081}
@@ -3928,6 +3938,98 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &1240333371
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240333365}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.85, y: 1.98}
+    newSize: {x: 10.8, y: 18.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.145, y: -0.44}
+      - {x: 0.145, y: -0.74}
+      - {x: 0.114999995, y: -0.79999995}
+      - {x: 0.125, y: -0.85999995}
+      - {x: 0.145, y: -0.90999997}
+      - {x: 0.275, y: -0.96999997}
+      - {x: 0.385, y: -0.96999997}
+      - {x: 0.42499998, y: -0.93}
+      - {x: 0.45499998, y: -0.85999995}
+      - {x: 0.39499998, y: -0.76}
+      - {x: 0.255, y: -0.66999996}
+      - {x: 0.24499999, y: -0.39999998}
+      - {x: 0.295, y: -0.39999998}
+      - {x: 0.465, y: -0.31}
+      - {x: 0.645, y: -0.07}
+      - {x: 0.705, y: -0.03}
+      - {x: 0.685, y: -0.35999998}
+      - {x: 0.625, y: -0.39999998}
+      - {x: 0.615, y: -0.53999996}
+      - {x: 0.66499996, y: -0.57}
+      - {x: 0.72499996, y: -0.59999996}
+      - {x: 0.805, y: -0.51}
+      - {x: 0.805, y: -0.38}
+      - {x: 0.79499996, y: -0.35}
+      - {x: 0.78499997, y: -0.01}
+      - {x: 0.775, y: 0.16}
+      - {x: 0.695, y: 0.45999998}
+      - {x: 0.635, y: 0.58}
+      - {x: 0.585, y: 0.65999997}
+      - {x: 0.465, y: 0.78999996}
+      - {x: 0.285, y: 0.90999997}
+      - {x: 0.185, y: 0.93}
+      - {x: 0.024999999, y: 0.95}
+      - {x: -0.085, y: 0.95}
+      - {x: -0.155, y: 0.94}
+      - {x: -0.255, y: 0.9}
+      - {x: -0.36499998, y: 0.84}
+      - {x: -0.45499998, y: 0.76}
+      - {x: -0.545, y: 0.66999996}
+      - {x: -0.59499997, y: 0.58}
+      - {x: -0.635, y: 0.5}
+      - {x: -0.675, y: 0.39}
+      - {x: -0.72499996, y: 0.14999999}
+      - {x: -0.72499996, y: -0.29}
+      - {x: -0.765, y: -0.35999998}
+      - {x: -0.765, y: -0.51}
+      - {x: -0.72499996, y: -0.55}
+      - {x: -0.645, y: -0.58}
+      - {x: -0.575, y: -0.48}
+      - {x: -0.59499997, y: -0.35999998}
+      - {x: -0.635, y: -0.19}
+      - {x: -0.635, y: -0.01}
+      - {x: -0.555, y: -0.14999999}
+      - {x: -0.42499998, y: -0.29}
+      - {x: -0.355, y: -0.35}
+      - {x: -0.185, y: -0.42}
+      - {x: -0.195, y: -0.53}
+      - {x: -0.175, y: -0.72999996}
+      - {x: -0.255, y: -0.76}
+      - {x: -0.325, y: -0.78999996}
+      - {x: -0.39499998, y: -0.83}
+      - {x: -0.36499998, y: -0.96999997}
+      - {x: -0.265, y: -0.96999997}
+      - {x: -0.13499999, y: -0.93}
+      - {x: -0.074999996, y: -0.85999995}
+      - {x: -0.095, y: -0.51}
+      - {x: -0.044999998, y: -0.45}
 --- !u!114 &1240333372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,7 +4185,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 20
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1310666047
 MonoBehaviour:
@@ -4114,7 +4216,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 17
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1310666048
 MonoBehaviour:
@@ -4171,7 +4273,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 14
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1310666051
 MonoBehaviour:
@@ -4190,7 +4292,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 13
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1310666052
 MonoBehaviour:
@@ -4209,7 +4311,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1310666053
 MonoBehaviour:
@@ -4278,7 +4380,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1310666056
 MonoBehaviour:
@@ -5138,8 +5240,9 @@ GameObject:
   - component: {fileID: 1523863275}
   - component: {fileID: 1523863274}
   - component: {fileID: 1523863273}
-  - component: {fileID: 1523863272}
   - component: {fileID: 1523863270}
+  - component: {fileID: 1523863272}
+  - component: {fileID: 1523863271}
   m_Layer: 0
   m_Name: cs304 NPC
   m_TagString: CS304
@@ -5156,7 +5259,7 @@ Transform:
   m_GameObject: {fileID: 1523863268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -29.66, y: 1.28, z: 1232.7836}
-  m_LocalScale: {x: 0.1995, y: 0.1995, z: 0.1995}
+  m_LocalScale: {x: 1.4755087, y: 1.4755087, z: 1.4755087}
   m_Children:
   - {fileID: 1310666045}
   m_Father: {fileID: 1587198081}
@@ -5175,8 +5278,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRange: 5
---- !u!61 &1523863272
-BoxCollider2D:
+--- !u!95 &1523863271
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523863268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 061c691197c0f624f982fa79d8b98ec4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1523863272
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5192,15 +5314,60 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 18.79}
+    oldSize: {x: 1.64, y: 1.44}
     newSize: {x: 10.8, y: 18.79}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 18.79}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.32999998, y: -0.24}
+      - {x: 0.61, y: 0.02}
+      - {x: 0.65999997, y: -0.07}
+      - {x: 0.42, y: -0.29}
+      - {x: 0.37, y: -0.35999998}
+      - {x: 0.35, y: -0.45}
+      - {x: 0.44, y: -0.52}
+      - {x: 0.5, y: -0.48999998}
+      - {x: 0.56, y: -0.42999998}
+      - {x: 0.76, y: -0.13}
+      - {x: 0.76, y: -0.03}
+      - {x: 0.63, y: 0.14999999}
+      - {x: 0.12, y: 0.66999996}
+      - {x: 0.08, y: 0.68}
+      - {x: 0.03, y: 0.68}
+      - {x: -0.52, y: 0.12}
+      - {x: -0.62, y: -0.04}
+      - {x: -0.65, y: 0.06}
+      - {x: -0.7, y: 0.17999999}
+      - {x: -0.64, y: 0.24}
+      - {x: -0.63, y: 0.29}
+      - {x: -0.64, y: 0.35}
+      - {x: -0.71999997, y: 0.42}
+      - {x: -0.81, y: 0.34}
+      - {x: -0.81, y: 0.22}
+      - {x: -0.76, y: 0.04}
+      - {x: -0.66999996, y: -0.14}
+      - {x: -0.61, y: -0.14}
+      - {x: -0.42, y: -0.04}
+      - {x: -0.17999999, y: -0.29}
+      - {x: -0.16, y: -0.44}
+      - {x: -0.22999999, y: -0.45999998}
+      - {x: -0.31, y: -0.55}
+      - {x: -0.31, y: -0.62}
+      - {x: -0.26999998, y: -0.65999997}
+      - {x: -0.19, y: -0.68}
+      - {x: -0.02, y: -0.58}
+      - {x: -0.04, y: -0.51}
+      - {x: 0.08, y: -0.48999998}
+      - {x: 0.22999999, y: -0.42999998}
+      - {x: 0.19, y: -0.55}
+      - {x: 0.24, y: -0.71999997}
+      - {x: 0.45999998, y: -0.71999997}
+      - {x: 0.52, y: -0.59999996}
+      - {x: 0.42999998, y: -0.51}
+      - {x: 0.32999998, y: -0.48999998}
 --- !u!50 &1523863273
 Rigidbody2D:
   serializedVersion: 4
@@ -5235,21 +5402,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 21
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":173.200012,\"yPos\":146},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":409.2,\"yPos\":144},\"ID\":7,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"No\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-13.7999878,\"yPos\":452},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
-    too! Can you help me with it?\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":227.200012,\"yPos\":449},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    can help you with your algorithm questions!!\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":159.200012,\"yPos\":722},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Omega
-    is just lower bounding the number of steps you take in an algorithm!\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":403.2,\"yPos\":724},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
-    algorithm iss bounded by \u0398(g(n)) if it is bounded by both O(g(n)) and \u03A9(g(n))\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"cs304Finished\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"BoolValue\":true},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":300.3,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Would
-    you like to start a conversation with your classmate?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"System\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs304Finished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":10},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs304Finished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":88.20001,\"yPos\":221},\"ID\":8,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"dialogue
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-37.8999634,\"yPos\":339},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.100037,\"yPos\":337},\"ID\":7,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"No\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-224.899963,\"yPos\":645},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    too! Can you help me with it?\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":16.1000366,\"yPos\":642},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    can help you with your algorithm questions!!\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-51.8999634,\"yPos\":915},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Omega
+    is just lower bounding the number of steps you take in an algorithm!\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":192.100037,\"yPos\":917},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
+    algorithm iss bounded by \u0398(g(n)) if it is bounded by both O(g(n)) and \u03A9(g(n))\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"cs304Finished\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"BoolValue\":true},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":89.20001,\"yPos\":215},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Would
+    you like to start a conversation with your classmate?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"System\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs304Finished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":10},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs304Finished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-122.899963,\"yPos\":414},\"ID\":8,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"dialogue
     304\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"cs304
-    help\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-27.7999878,\"yPos\":522},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Would
+    help\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-238.899963,\"yPos\":715},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Would
     if I could, know what I mean?\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
-    the Rectangle \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":245.200012,\"yPos\":518},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"dialogue\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"cs304\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":251.200012,\"yPos\":612},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Give
+    the Rectangle \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":34.1000366,\"yPos\":711},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"dialogue\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"cs304\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":40.1000366,\"yPos\":805},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Give
     me some summarizing points?\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"cs304
-    \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":263.2,\"yPos\":836},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Ahhhhhh
+    \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":52.1000366,\"yPos\":1029},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Ahhhhhh
     I see! Thank you so much for the advice, you're truly a role model for me in
     CS!\",\"parentUIDs\":[15,16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Carol
-    the Chiliagon\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":386.2,\"yPos\":288},\"ID\":20,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Anyways,
+    the Chiliagon\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":175.100037,\"yPos\":481},\"ID\":20,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Anyways,
     I have a fun fact about the Wellesley CS Department - did you know:...\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"cs304\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.3}]}"
   saveVersion: 110
   DefaultName: 
@@ -5314,7 +5481,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 05988afc99ddc9841bbaac2b89449054, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 174aadc7265d7a146868aaa6c58432d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5465,8 +5632,9 @@ GameObject:
   - component: {fileID: 1611730548}
   - component: {fileID: 1611730547}
   - component: {fileID: 1611730546}
-  - component: {fileID: 1611730545}
   - component: {fileID: 1611730549}
+  - component: {fileID: 1611730545}
+  - component: {fileID: 1611730544}
   m_Layer: 0
   m_Name: cs231 NPC
   m_TagString: CS231
@@ -5483,14 +5651,33 @@ Transform:
   m_GameObject: {fileID: 1611730542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -35.97, y: -4.04, z: 1232.7836}
-  m_LocalScale: {x: 0.1995, y: 0.1995, z: 0.1995}
+  m_LocalScale: {x: 1.3048161, y: 1.3048161, z: 1.3048161}
   m_Children:
   - {fileID: 100100818}
   m_Father: {fileID: 1587198081}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1611730545
-BoxCollider2D:
+--- !u!95 &1611730544
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611730542}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f341f81b23ff454408bad9cfde056283, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1611730545
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5506,15 +5693,71 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.8, y: 18.79}
+    oldSize: {x: 1.54, y: 1.91}
     newSize: {x: 10.8, y: 18.79}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.8, y: 18.79}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.17999999, y: -0.72499996}
+      - {x: 0.19, y: -0.615}
+      - {x: 0.25, y: -0.555}
+      - {x: 0.39, y: -0.545}
+      - {x: 0.44, y: -0.515}
+      - {x: 0.42999998, y: -0.024999999}
+      - {x: 0.52, y: -0.305}
+      - {x: 0.53999996, y: -0.435}
+      - {x: 0.57, y: -0.48499998}
+      - {x: 0.59, y: -0.505}
+      - {x: 0.65999997, y: -0.515}
+      - {x: 0.69, y: -0.475}
+      - {x: 0.69, y: -0.355}
+      - {x: 0.62, y: -0.295}
+      - {x: 0.56, y: -0.13499999}
+      - {x: 0.53999996, y: -0.015}
+      - {x: 0.47, y: 0.175}
+      - {x: 0.44, y: 0.205}
+      - {x: 0.44, y: 0.815}
+      - {x: 0.39999998, y: 0.865}
+      - {x: 0.08, y: 0.865}
+      - {x: -0.35999998, y: 0.85499996}
+      - {x: -0.42, y: 0.815}
+      - {x: -0.42999998, y: 0.695}
+      - {x: -0.45, y: 0.195}
+      - {x: -0.53, y: 0.005}
+      - {x: -0.62, y: -0.325}
+      - {x: -0.65999997, y: -0.33499998}
+      - {x: -0.69, y: -0.375}
+      - {x: -0.7, y: -0.465}
+      - {x: -0.68, y: -0.515}
+      - {x: -0.63, y: -0.525}
+      - {x: -0.56, y: -0.49499997}
+      - {x: -0.53, y: -0.42499998}
+      - {x: -0.47, y: -0.225}
+      - {x: -0.41, y: 0.035}
+      - {x: -0.42, y: -0.175}
+      - {x: -0.42, y: -0.255}
+      - {x: -0.39999998, y: -0.525}
+      - {x: -0.39, y: -0.555}
+      - {x: -0.22, y: -0.575}
+      - {x: -0.19999999, y: -0.715}
+      - {x: -0.26, y: -0.73499995}
+      - {x: -0.35999998, y: -0.805}
+      - {x: -0.32, y: -0.955}
+      - {x: -0.21, y: -0.945}
+      - {x: -0.099999994, y: -0.85499996}
+      - {x: -0.11, y: -0.555}
+      - {x: 0.08, y: -0.545}
+      - {x: 0.08, y: -0.655}
+      - {x: 0.04, y: -0.775}
+      - {x: 0.08, y: -0.92499995}
+      - {x: 0.16, y: -0.955}
+      - {x: 0.26999998, y: -0.955}
+      - {x: 0.32999998, y: -0.905}
+      - {x: 0.31, y: -0.805}
+      - {x: 0.22999999, y: -0.73499995}
 --- !u!50 &1611730546
 Rigidbody2D:
   serializedVersion: 4
@@ -5549,25 +5792,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 21
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":173.200012,\"yPos\":146},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":409.2,\"yPos\":144},\"ID\":7,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"No\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-13.7999878,\"yPos\":452},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
-    too! Can you help me with it?\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":227.200012,\"yPos\":449},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    can help you with your algorithm questions!!\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":159.200012,\"yPos\":722},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Omega
-    is just lower bounding the number of steps you take in an algorithm!\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":403.2,\"yPos\":724},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
-    algorithm iss bounded by \u0398(g(n)) if it is bounded by both O(g(n)) and \u03A9(g(n))\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"BoolValue\":true},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":300.3,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Would
-    you like to start a conversation with your classmate?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"System\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":10},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":88.20001,\"yPos\":221},\"ID\":8,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Gosh
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-158.899963,\"yPos\":203},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yes\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.10004,\"yPos\":201},\"ID\":7,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"No\",\"parentUIDs\":[0],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-345.899963,\"yPos\":509},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    too! Can you help me with it?\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-104.899963,\"yPos\":506},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    can help you with your algorithm questions!!\",\"parentUIDs\":[8],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-172.899963,\"yPos\":779},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Omega
+    is just lower bounding the number of steps you take in an algorithm!\",\"parentUIDs\":[14],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":71.10004,\"yPos\":781},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Your
+    algorithm iss bounded by \u0398(g(n)) if it is bounded by both O(g(n)) and \u03A9(g(n))\",\"parentUIDs\":[14],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"BoolValue\":true},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-31.7999878,\"yPos\":79},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Would
+    you like to start a conversation with your classmate?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"System\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":10},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"cs231Finished\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasHelped\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-243.899963,\"yPos\":278},\"ID\":8,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Gosh
     this bubble sort algorithm is killing me...\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
-    the Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-27.7999878,\"yPos\":522},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Would
+    the Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-359.899963,\"yPos\":579},\"ID\":12,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Would
     if I could, know what I mean?\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
-    the Rectangle \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":245.200012,\"yPos\":518},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'll
+    the Rectangle \",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-86.89996,\"yPos\":575},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'll
     treat you to the Leaky Beaker for a week. Two weeks.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
-    The Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":251.200012,\"yPos\":612},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Give
+    The Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-80.89996,\"yPos\":669},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Give
     me some summarizing points?\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
-    The Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":263.2,\"yPos\":836},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Ahhhhhh
+    The Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-68.89996,\"yPos\":893},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Ahhhhhh
     I see! Thank you so much for the advice, you're truly a role model for me in
-    CS!\",\"parentUIDs\":[15,16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Carol
-    the Chiliagon\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":393.2,\"yPos\":266},\"ID\":20,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Anyways,
-    I have a fun fact about the Wellesley CS Department - did you know:...\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Carol
-    The Chiliagon\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.3}]}"
+    CS!\",\"parentUIDs\":[15,16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
+    the Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":61.1000366,\"yPos\":323},\"ID\":20,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"collidedWithDialogue\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"isTalking\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Anyways,
+    I have a fun fact about the Wellesley CS Department - did you know:...\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Regina
+    the Rectangle\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0.3}]}"
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -5631,7 +5874,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 05988afc99ddc9841bbaac2b89449054, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1054bd811f0752e469c39741ed230059, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6406,7 +6649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923178289}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.68, y: -1.96, z: 1232.7836}
+  m_LocalPosition: {x: -33.45, y: -1.79, z: 1232.7836}
   m_LocalScale: {x: 0.1995, y: 0.1995, z: 0.1995}
   m_Children:
   - {fileID: 616442404}
@@ -6473,21 +6716,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 23
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs231Finished","CheckType":0,"RequiredValue":true}],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":173.200012,"yPos":146},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":409.2,"yPos":144},"ID":7,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":227.200012,"yPos":449},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
-    want help with CS240 assignment? I would love to put you on the right path.","parentUIDs":[21],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":159.200012,"yPos":722},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
-    forget to use Malloc when you want space in memory reserved!","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":403.2,"yPos":724},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
-    forget to free any memory you reserved with malloc!","parentUIDs":[14],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"cs240Finished","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"hasHelped","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":300.3,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
-    you like to start a conversation with your classmate?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":88.20001,"yPos":221},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Segemtation
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":true},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs231Finished","CheckType":0,"RequiredValue":true}],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-53.8999634,"yPos":146},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":182.100037,"yPos":144},"ID":7,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":0.100036621,"yPos":449},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    want help with CS240 assignment? I would love to put you on the right path.","parentUIDs":[21],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-67.89996,"yPos":722},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
+    forget to use Malloc when you want space in memory reserved!","parentUIDs":[14],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":176.100037,"yPos":724},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
+    forget to free any memory you reserved with malloc!","parentUIDs":[14],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"cs240Finished","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"hasHelped","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":true,"xPos":73.20001,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
+    you like to start a conversation with your classmate?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":-138.899963,"yPos":221},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Segemtation
     Fault...","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Regina
-    the Rectangle","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":245.200012,"yPos":518},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
-    did you already finish CS240''s assignment? Impressive, I''ve been trying forever.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":251.200012,"yPos":612},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Give
+    the Rectangle","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":18.1000366,"yPos":518},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+    did you already finish CS240''s assignment? Impressive, I''ve been trying forever.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":24.1000366,"yPos":612},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Give
     me some guidance with memory in C?","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Regina
-    The Rectangle","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":154.200012,"yPos":846},"ID":17,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"hasHelped","Value":true}],"TMPFontGUID":null,"Text":"Ooops,
+    The Rectangle","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-72.89996,"yPos":846},"ID":17,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"hasHelped","Value":true}],"TMPFontGUID":null,"Text":"Ooops,
     forgot Malloc was a thing. Thank you for the hint, I know where to go from here!!","parentUIDs":[15,16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    the Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":386.2,"yPos":288},"ID":20,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Anyways,
+    the Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":159.100037,"yPos":288},"ID":20,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Anyways,
     I have a fun fact about the Wellesley CS Department - did you know:...","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Carol
-    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.3},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":false},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs240Finished","CheckType":0,"RequiredValue":true}],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":85,"yPos":325},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Again.\n\nThis
-    is my 13th memory leakage today.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":385,"yPos":852},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Ooops,
+    The Chiliagon","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.3},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"hasHelped","CheckType":0,"RequiredValue":false},{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"cs240Finished","CheckType":0,"RequiredValue":true}],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-142.099976,"yPos":325},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Again.\n\nThis
+    is my 13th memory leakage today.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":157.900024,"yPos":852},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Ooops,
     forgot to deallocate with free. Thank you for the hint, I know where to go from
     here!!","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -7002,7 +7245,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1986576494
 Transform:
@@ -7104,7 +7347,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 9
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1986576499
 MonoBehaviour:
@@ -7135,7 +7378,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1986576500
 MonoBehaviour:
@@ -7192,7 +7435,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 20
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1986576503
 MonoBehaviour:
@@ -7223,7 +7466,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 17
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1986576504
 MonoBehaviour:
@@ -7280,7 +7523,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 14
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1986576507
 MonoBehaviour:
@@ -7299,7 +7542,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 13
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 9bc35fb69ea6baf4b831fe69a8958a36, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1988167488
 GameObject:
@@ -8480,6 +8723,90 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: handHolds.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eccfdb4db3b6bf40895776c72e49dbb, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: handHolds.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 897008fe34b53b84da276132b9ae9d46, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: handHolds.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: cdae2d71e57c317459a8077e73957f48, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: handHolds.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: de2c9848f2857e64688a5053c888bf39, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: handHolds.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: fad2afc1d7041704b9c5b943f796ea6c, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: handHolds.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: lightbulbs.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 886a72ae29b2e0e45b2a6300a3c29f3a, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: lightbulbs.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: aa4fee31c9c0a93489ebecd13bd0066b, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: lightbulbs.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: d4b40f328fa335f40b306920e0a8212e, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: lightbulbs.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: aa28a9951c294914ebfa48519fafad48, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: lightbulbs.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e6a4543f2d6a41f4191196e3ee9238d2, type: 3}
+    - target: {fileID: 1323707486, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: lightbulbs.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870286798798093596, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 886a72ae29b2e0e45b2a6300a3c29f3a, type: 3}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 116.90784
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 109.01001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -338
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616495989080904731, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76
+      objectReference: {fileID: 0}
     - target: {fileID: 4706689861892474652, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -8736,6 +9063,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034302507048937208, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1eccfdb4db3b6bf40895776c72e49dbb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5882f6ac3268a6346ae363deb9148c41, type: 3}
 --- !u!1 &4706689863014853442 stripped

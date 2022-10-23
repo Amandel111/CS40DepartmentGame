@@ -248,16 +248,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 14
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":219.200012,"yPos":-56},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[6],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":489.2,"yPos":-56},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":189.200012,"yPos":-460},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":503.2,"yPos":-448},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"finishedCS231","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":true,"xPos":345.5,"yPos":-567},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Would
-    you like to start a conversation with your CS231 teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS231","CheckType":0,"RequiredValue":false}],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":325.2,"yPos":-284},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Come
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-11.0999756,"yPos":234},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[6],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":258.900024,"yPos":234},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[6],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-41.0999756,"yPos":-170},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":272.900024,"yPos":-158},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"finishedCS231","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":true,"xPos":115.200012,"yPos":-277},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Would
+    you like to start a conversation with your CS231 teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS231","CheckType":0,"RequiredValue":false}],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":94.9000244,"yPos":6},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Come
     to admire the beauty of elegant code? Hmm??","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS231
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":325.2,"yPos":-174},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":94.9000244,"yPos":116},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
     do you want help with the pset?","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS231
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":202.200012,"yPos":27},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-28.0999756,"yPos":317},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     know what I always say - practice makes perfect!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS231
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":205.200012,"yPos":152},"ID":10,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Try
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-25.0999756,"yPos":442},"ID":10,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Try
     practicing with these time complexity questions!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS231
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":358.2,"yPos":-393},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Hmmm...This
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":127.900024,"yPos":-103},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Hmmm...This
     strcutrure''s time complexity  is - oh! Didn''t see you there!","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS231
     Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -424,9 +424,10 @@ GameObject:
   m_Component:
   - component: {fileID: 848912294}
   - component: {fileID: 848912293}
-  - component: {fileID: 848912292}
   - component: {fileID: 848912291}
   - component: {fileID: 848912296}
+  - component: {fileID: 848912295}
+  - component: {fileID: 848912292}
   m_Layer: 0
   m_Name: CS231 Teacher
   m_TagString: CS231
@@ -455,8 +456,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &848912292
-BoxCollider2D:
+--- !u!60 &848912292
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -472,15 +473,74 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.23, y: 1.41}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.275, y: -0.315}
+      - {x: 0.265, y: -0.155}
+      - {x: 0.405, y: -0.155}
+      - {x: 0.435, y: -0.105}
+      - {x: 0.465, y: 0.055}
+      - {x: 0.445, y: -0.085}
+      - {x: 0.435, y: -0.195}
+      - {x: 0.385, y: -0.255}
+      - {x: 0.345, y: -0.355}
+      - {x: 0.39499998, y: -0.435}
+      - {x: 0.48499998, y: -0.435}
+      - {x: 0.53499997, y: -0.305}
+      - {x: 0.525, y: -0.205}
+      - {x: 0.555, y: -0.105}
+      - {x: 0.565, y: -0.024999999}
+      - {x: 0.565, y: 0.074999996}
+      - {x: 0.475, y: 0.21499999}
+      - {x: 0.45499998, y: 0.345}
+      - {x: 0.465, y: 0.575}
+      - {x: 0.405, y: 0.615}
+      - {x: -0.295, y: 0.615}
+      - {x: -0.375, y: 0.60499996}
+      - {x: -0.405, y: 0.565}
+      - {x: -0.42499998, y: 0.255}
+      - {x: -0.515, y: 0.114999995}
+      - {x: -0.525, y: 0.044999998}
+      - {x: -0.525, y: -0.044999998}
+      - {x: -0.505, y: -0.175}
+      - {x: -0.525, y: -0.305}
+      - {x: -0.525, y: -0.315}
+      - {x: -0.45499998, y: -0.405}
+      - {x: -0.345, y: -0.345}
+      - {x: -0.355, y: -0.285}
+      - {x: -0.405, y: -0.185}
+      - {x: -0.42499998, y: -0.015}
+      - {x: -0.415, y: 0.055}
+      - {x: -0.405, y: -0.125}
+      - {x: -0.36499998, y: -0.16499999}
+      - {x: -0.195, y: -0.16499999}
+      - {x: -0.205, y: -0.415}
+      - {x: -0.295, y: -0.45499998}
+      - {x: -0.345, y: -0.49499997}
+      - {x: -0.385, y: -0.525}
+      - {x: -0.345, y: -0.635}
+      - {x: -0.315, y: -0.645}
+      - {x: -0.175, y: -0.635}
+      - {x: -0.125, y: -0.59499997}
+      - {x: -0.114999995, y: -0.515}
+      - {x: -0.065, y: -0.16499999}
+      - {x: 0.095, y: -0.185}
+      - {x: 0.16499999, y: -0.16499999}
+      - {x: 0.175, y: -0.265}
+      - {x: 0.175, y: -0.475}
+      - {x: 0.185, y: -0.615}
+      - {x: 0.235, y: -0.655}
+      - {x: 0.315, y: -0.675}
+      - {x: 0.355, y: -0.675}
+      - {x: 0.415, y: -0.635}
+      - {x: 0.415, y: -0.49499997}
+      - {x: 0.275, y: -0.45499998}
 --- !u!212 &848912293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -521,7 +581,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c2a5be59b4a36648a911535c6e46ab8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39e7b1fd2028d0248bf98958b06bbe0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -547,6 +607,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &848912295
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848912290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f376838f8b19704b8caedfd0ef31c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &848912296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +694,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 10
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 39e7b1fd2028d0248bf98958b06bbe0b, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1243791833
 Transform:
@@ -648,7 +727,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 9
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 39e7b1fd2028d0248bf98958b06bbe0b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1243791835
 MonoBehaviour:
@@ -705,7 +784,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 6
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 39e7b1fd2028d0248bf98958b06bbe0b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1243791838
 MonoBehaviour:
@@ -724,7 +803,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 39e7b1fd2028d0248bf98958b06bbe0b, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1243791839
 MonoBehaviour:
@@ -800,7 +879,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 11
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 39e7b1fd2028d0248bf98958b06bbe0b, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &1414823310
 GameObject:

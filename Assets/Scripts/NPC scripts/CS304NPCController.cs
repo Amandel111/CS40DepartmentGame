@@ -13,6 +13,7 @@ public class CS304NPCController : MonoBehaviour
     Animator playerAnim;
     Transform playerTransform;
     bool startedConvo;
+    Animator NPCAnim;
 
     public float dialogueRange = 4;
     void Start()
@@ -21,6 +22,7 @@ public class CS304NPCController : MonoBehaviour
         eventsTracker = FindObjectOfType<LevelOneController>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
+        NPCAnim = GameObject.FindGameObjectWithTag("CS304").GetComponent<Animator>();
     }
     void Update()
     {
@@ -29,10 +31,12 @@ public class CS304NPCController : MonoBehaviour
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
                 playerAnim.SetBool("isTalking", true);
+                NPCAnim.SetBool("isTalking", true);
             }
             else
             {
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
@@ -46,6 +50,8 @@ public class CS304NPCController : MonoBehaviour
                 ConversationManager.Instance.EndConversation();
                 startedConvo = false;
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
+
             }
         }
     }

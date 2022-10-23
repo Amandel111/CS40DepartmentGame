@@ -80,19 +80,19 @@ MonoBehaviour:
     correctAnswer: Console.WriteLine("Hello World");
     classSubjectTrigger: finishedCS111
   questionsCS231:
-  - question: f1(n) = n^0.5, what is O(f1)?
-    answerOne: O(0.5^n)
-    answerTwo: O(n^0.5)
-    answerThree: O(n)
-    answerFour: O(logn)
-    correctAnswer: O(n)
+  - question: 'f1(n) = n^0.5. Select the correct choice:'
+    answerOne: "\u03A9(f1) = n"
+    answerTwo: "\u03A9(f1) = nlog(n)"
+    answerThree: "\u03A9(f1) = n^2"
+    answerFour: "\u03A9(f1) = logn"
+    correctAnswer: "\u03A9(f1) = logn"
     classSubjectTrigger: finishedCS231
-  - question: "f2(n) = 3n log(n) - n + 4, what is \u03A9(f2)"
-    answerOne: "\u03A9(nlog(n) - n)"
-    answerTwo: "\u03A9(nlogn)"
-    answerThree: "\u03A9(logn)"
-    answerFour: "\u03A9(n)"
-    correctAnswer: "\u03A9(n)"
+  - question: 'f1(n) = 2*n^2. Select the most correct choice:'
+    answerOne: O(f1) = n^2
+    answerTwo: O(f1) = 2*n^2
+    answerThree: O(f1) = logn
+    answerFour: O(f1) = sqrt(n)
+    correctAnswer: O(f1) = n^2
     classSubjectTrigger: finishedCS231
   - question: f1 = n^(1/3) + lg(n), f2 = n^(3.1), f3 = n^3*lg(n)
     answerOne: f1 < f2 < f3
@@ -159,8 +159,8 @@ MonoBehaviour:
     answerFour: OPEN
     correctAnswer: SELECT
     classSubjectTrigger: finishedCS304
-  - question: With MySQL, how do you select all the records from a table named "Persons"
-      where the value of the column "FirstName" starts with an "a"?
+  - question: "With MySQL, select all records from table \u201CPersons\u201D where
+      value of column \u201CFirstName\u201D starts with \u201Ca\u201D."
     answerOne: "SELECT * FROM Persons WHERE FirstName LIKE \u2018a%\u2019"
     answerTwo: "SELECT * FROM Persons WHERE FirstName = \u2018a\u2019 "
     answerThree: "SELECT * FROM Persons WHERE FirstName LIKE \u2018%a\u2019"

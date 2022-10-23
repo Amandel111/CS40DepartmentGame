@@ -8,6 +8,7 @@ public class CS111Controller : MonoBehaviour
     NPCConversation cs111Convo;
     bool startedConvo;
     Animator playerAnim;
+    Animator NPCAnim;
     Transform playerTransform;
     public float dialogueRange;
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class CS111Controller : MonoBehaviour
     {
         eventTracker = FindObjectOfType<LevelOneController>();
         cs111Convo = FindObjectOfType<NPCConversation>();
+        NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
 
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
@@ -30,10 +32,12 @@ public class CS111Controller : MonoBehaviour
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
                 playerAnim.SetBool("isTalking", true);
+                NPCAnim.SetBool( "isTalking", true);
             }
             else
             {
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
@@ -46,6 +50,7 @@ public class CS111Controller : MonoBehaviour
                 ConversationManager.Instance.EndConversation();
                 startedConvo = false;
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
         }
     }

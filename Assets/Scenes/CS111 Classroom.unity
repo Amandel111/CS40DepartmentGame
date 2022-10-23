@@ -660,9 +660,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1051052535}
   - component: {fileID: 1051052534}
-  - component: {fileID: 1051052533}
   - component: {fileID: 1051052532}
   - component: {fileID: 1051052537}
+  - component: {fileID: 1051052536}
+  - component: {fileID: 1051052533}
   m_Layer: 0
   m_Name: CS111 Teacher
   m_TagString: CS111
@@ -691,8 +692,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1051052533
-BoxCollider2D:
+--- !u!60 &1051052533
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -708,15 +709,84 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.86, y: 1.84}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.24, y: -0.65999997}
+      - {x: 0.24, y: -0.47}
+      - {x: 0.22999999, y: -0.39999998}
+      - {x: 0.42, y: -0.29999998}
+      - {x: 0.51, y: -0.22999999}
+      - {x: 0.58, y: -0.17}
+      - {x: 0.59, y: -0.14}
+      - {x: 0.63, y: 0.01}
+      - {x: 0.7, y: -0.07}
+      - {x: 0.76, y: -0.22999999}
+      - {x: 0.77, y: -0.38}
+      - {x: 0.69, y: -0.42}
+      - {x: 0.68, y: -0.55}
+      - {x: 0.74, y: -0.59999996}
+      - {x: 0.83, y: -0.59999996}
+      - {x: 0.85999995, y: -0.56}
+      - {x: 0.89, y: -0.53}
+      - {x: 0.9, y: -0.48999998}
+      - {x: 0.9, y: -0.39999998}
+      - {x: 0.85999995, y: -0.26999998}
+      - {x: 0.82, y: -0.11}
+      - {x: 0.78, y: -0.02}
+      - {x: 0.68, y: 0.13}
+      - {x: 0.59999996, y: 0.21}
+      - {x: 0.61, y: 0.48999998}
+      - {x: 0.51, y: 0.58}
+      - {x: 0.19999999, y: 0.75}
+      - {x: 0, y: 0.85999995}
+      - {x: -0.03, y: 0.85999995}
+      - {x: -0.42, y: 0.64}
+      - {x: -0.58, y: 0.56}
+      - {x: -0.63, y: 0.48999998}
+      - {x: -0.62, y: 0.19999999}
+      - {x: -0.68, y: 0.14}
+      - {x: -0.7, y: 0.11}
+      - {x: -0.74, y: 0.04}
+      - {x: -0.83, y: -0.19}
+      - {x: -0.85999995, y: -0.29}
+      - {x: -0.93, y: -0.41}
+      - {x: -0.93, y: -0.55}
+      - {x: -0.87, y: -0.63}
+      - {x: -0.78, y: -0.58}
+      - {x: -0.72999996, y: -0.52}
+      - {x: -0.71, y: -0.45999998}
+      - {x: -0.78, y: -0.39}
+      - {x: -0.76, y: -0.29}
+      - {x: -0.62, y: 0.07}
+      - {x: -0.62, y: -0.17}
+      - {x: -0.59999996, y: -0.19999999}
+      - {x: -0.26999998, y: -0.39999998}
+      - {x: -0.32999998, y: -0.71999997}
+      - {x: -0.39999998, y: -0.76}
+      - {x: -0.41, y: -0.85999995}
+      - {x: -0.32999998, y: -0.91999996}
+      - {x: -0.21, y: -0.90999997}
+      - {x: -0.14999999, y: -0.84999996}
+      - {x: -0.13, y: -0.77}
+      - {x: -0.16, y: -0.44}
+      - {x: -0.12, y: -0.5}
+      - {x: 0.02, y: -0.55}
+      - {x: 0.14, y: -0.44}
+      - {x: 0.14, y: -0.61}
+      - {x: 0.12, y: -0.77}
+      - {x: 0.13, y: -0.85999995}
+      - {x: 0.21, y: -0.91999996}
+      - {x: 0.29999998, y: -0.91999996}
+      - {x: 0.35, y: -0.90999997}
+      - {x: 0.39, y: -0.87}
+      - {x: 0.39, y: -0.76}
+      - {x: 0.35999998, y: -0.7}
 --- !u!212 &1051052534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -757,7 +827,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c2a5be59b4a36648a911535c6e46ab8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -783,6 +853,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1051052536
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051052531}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8e38d68fc8d8eb4097cff9ff7fdeef9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1051052537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,7 +929,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1418280226
 Transform:
@@ -885,7 +974,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1418280228
 MonoBehaviour:
@@ -904,7 +993,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 7
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1418280229
 MonoBehaviour:
@@ -923,7 +1012,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 6
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1418280230
 MonoBehaviour:
@@ -980,7 +1069,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1418280233
 MonoBehaviour:
@@ -1037,7 +1126,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 9
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2a7fac713719e604b89b2f11861b2cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1418280236
 MonoBehaviour:
@@ -1249,16 +1338,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 10
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS111","CheckType":0,"RequiredValue":false}],"NodeUID":3},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS111","CheckType":0,"RequiredValue":true}],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":139},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":422,"yPos":138},"ID":2,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":40,"yPos":314},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[3],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":282,"yPos":317},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[3],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"finishedCS111","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":300.3,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
-    you like to start a conversation with your CS111 teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":159,"yPos":211},"ID":3,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Hi!
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS111","CheckType":0,"RequiredValue":false}],"NodeUID":3},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS111","CheckType":0,"RequiredValue":true}],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-341.099976,"yPos":178},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false}],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-83.0999756,"yPos":177},"ID":2,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":-465.099976,"yPos":353},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[3],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":-223.099976,"yPos":356},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[3],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"finishedCS111","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":-204.799988,"yPos":61},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
+    you like to start a conversation with your CS111 teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":-346.099976,"yPos":250},"ID":3,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Hi!
     Are you here to ask about your current assignment?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS111
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":429,"yPos":390},"ID":6,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Sounds
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-76.0999756,"yPos":429},"ID":6,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Sounds
     good, let me know if you ever need help!","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS111
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":2,"yPos":392},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Let
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":-503.099976,"yPos":431},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Let
     me give you some practice questions on CS111 fundementals...","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS111
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":5,"yPos":497},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"If
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-500.099976,"yPos":536},"ID":8,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"If
     you can answer one of these, you''ll be set on your assignment!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS111
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":435,"yPos":211},"ID":9,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Quite
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-70.0999756,"yPos":250},"ID":9,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Quite
     a crowd has shown up for office hours again! Better get busy...","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS111
     Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110

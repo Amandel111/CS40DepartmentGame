@@ -12,12 +12,13 @@ public class CS240Controller : MonoBehaviour
     Animator playerAnim;
     Transform playerTransform;
     public float dialogueRange = 4;
+    Animator NPCAnim;
     void Start()
     {
         eventTracker = FindObjectOfType<LevelOneController>();
         cs240Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
-
+        NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
     }
@@ -29,10 +30,12 @@ public class CS240Controller : MonoBehaviour
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
                 playerAnim.SetBool("isTalking", true);
+                NPCAnim.SetBool("isTalking", true);
             }
             else
             {
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
@@ -45,6 +48,7 @@ public class CS240Controller : MonoBehaviour
                 ConversationManager.Instance.EndConversation();
                 startedConvo = false;
                 playerAnim.SetBool("isTalking", false);
+                NPCAnim.SetBool("isTalking", false);
             }
         }
     }

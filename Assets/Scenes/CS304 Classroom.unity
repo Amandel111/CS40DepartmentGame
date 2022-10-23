@@ -761,9 +761,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1696773510}
   - component: {fileID: 1696773509}
-  - component: {fileID: 1696773508}
   - component: {fileID: 1696773507}
   - component: {fileID: 1696773511}
+  - component: {fileID: 1696773512}
+  - component: {fileID: 1696773508}
   m_Layer: 0
   m_Name: CS304 Teacher
   m_TagString: CS304
@@ -792,8 +793,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1696773508
-BoxCollider2D:
+--- !u!60 &1696773508
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -809,15 +810,77 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.86, y: 1.85}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.26, y: -0.435}
+      - {x: 0.37, y: -0.345}
+      - {x: 0.44, y: -0.265}
+      - {x: 0.65999997, y: -0.074999996}
+      - {x: 0.69, y: 0.145}
+      - {x: 0.77, y: 0.015}
+      - {x: 0.77, y: -0.125}
+      - {x: 0.71, y: -0.235}
+      - {x: 0.63, y: -0.385}
+      - {x: 0.58, y: -0.445}
+      - {x: 0.59999996, y: -0.575}
+      - {x: 0.7, y: -0.59499997}
+      - {x: 0.75, y: -0.555}
+      - {x: 0.77, y: -0.445}
+      - {x: 0.83, y: -0.24499999}
+      - {x: 0.88, y: -0.114999995}
+      - {x: 0.88, y: 0.015}
+      - {x: 0.79999995, y: 0.16499999}
+      - {x: 0.66999996, y: 0.465}
+      - {x: 0.65999997, y: 0.49499997}
+      - {x: 0.45999998, y: 0.705}
+      - {x: 0.29999998, y: 0.85499996}
+      - {x: 0.26999998, y: 0.865}
+      - {x: -0.24, y: 0.865}
+      - {x: -0.61, y: 0.49499997}
+      - {x: -0.63, y: 0.42499998}
+      - {x: -0.65999997, y: 0.24499999}
+      - {x: -0.81, y: 0.074999996}
+      - {x: -0.82, y: 0.044999998}
+      - {x: -0.82, y: -0.13499999}
+      - {x: -0.81, y: -0.235}
+      - {x: -0.77, y: -0.315}
+      - {x: -0.77, y: -0.515}
+      - {x: -0.7, y: -0.575}
+      - {x: -0.61, y: -0.545}
+      - {x: -0.58, y: -0.505}
+      - {x: -0.59, y: -0.435}
+      - {x: -0.66999996, y: -0.305}
+      - {x: -0.72999996, y: -0.055}
+      - {x: -0.71, y: 0.044999998}
+      - {x: -0.63, y: -0.044999998}
+      - {x: -0.48999998, y: -0.185}
+      - {x: -0.26, y: -0.45499998}
+      - {x: -0.26, y: -0.545}
+      - {x: -0.24, y: -0.66499996}
+      - {x: -0.29, y: -0.66499996}
+      - {x: -0.35, y: -0.695}
+      - {x: -0.38, y: -0.815}
+      - {x: -0.32, y: -0.865}
+      - {x: -0.21, y: -0.875}
+      - {x: -0.12, y: -0.79499996}
+      - {x: -0.14, y: -0.59499997}
+      - {x: -0.16, y: -0.415}
+      - {x: 0.03, y: -0.435}
+      - {x: 0.17, y: -0.435}
+      - {x: 0.17, y: -0.78499997}
+      - {x: 0.21, y: -0.84499997}
+      - {x: 0.29999998, y: -0.875}
+      - {x: 0.35999998, y: -0.875}
+      - {x: 0.41, y: -0.85499996}
+      - {x: 0.41, y: -0.765}
+      - {x: 0.35999998, y: -0.685}
+      - {x: 0.26, y: -0.635}
 --- !u!212 &1696773509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -858,7 +921,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c2a5be59b4a36648a911535c6e46ab8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -897,6 +960,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRange: 2
+--- !u!95 &1696773512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696773506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d970a87abc12c14bb1123d245fa0969, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2013735940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1112,6 @@ GameObject:
   - component: {fileID: 2054235595}
   - component: {fileID: 2054235594}
   - component: {fileID: 2054235604}
-  - component: {fileID: 2054235605}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -1081,7 +1162,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 12
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2054235595
 MonoBehaviour:
@@ -1100,7 +1181,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 10
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2054235596
 MonoBehaviour:
@@ -1119,7 +1200,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 8
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2054235597
 MonoBehaviour:
@@ -1176,7 +1257,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 5
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2054235600
 MonoBehaviour:
@@ -1195,7 +1276,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &2054235601
 MonoBehaviour:
@@ -1283,26 +1364,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 13
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &2054235605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054235592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 15
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 970a2aac80719f34392d805185cd583d, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &2058704481
 GameObject:
@@ -1382,24 +1444,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 16
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":99.20001,"yPos":130},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":347.2,"yPos":134},"ID":2,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogu","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"givenIndependenceSpeech","CheckType":0,"RequiredValue":false}],"NodeUID":8},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"givenIndependenceSpeech","CheckType":0,"RequiredValue":true}],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-80.79999,"yPos":448},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
-    please give hints","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":187.200012,"yPos":451},"ID":7,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Just
-    admiring the CS304 classroom!","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"finishedCS304","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"givenIndependenceSpeech","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":181.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Do
-    you want to start a conversation with your CS304 teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS304","CheckType":0,"RequiredValue":true}],"NodeUID":15},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS304","CheckType":0,"RequiredValue":false}],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":90.20001,"yPos":198},"ID":3,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"INSERT
-    TEXT","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":-4.799988,"yPos":332},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
-    you here for questions on the assignment?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-108.799988,"yPos":516},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":-142.099976,"yPos":343},"ID":1,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":105.900024,"yPos":347},"ID":2,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"No","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"givenIndependenceSpeech","CheckType":0,"RequiredValue":false}],"NodeUID":8},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"givenIndependenceSpeech","CheckType":0,"RequiredValue":true}],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-322.099976,"yPos":661},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
+    please give hints","parentUIDs":[5],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-54.0999756,"yPos":664},"ID":7,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Just
+    admiring the CS304 classroom!","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"finishedCS304","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"givenIndependenceSpeech","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"isTalking","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"collidedWithDialogue","BoolValue":true}],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":-59.7999878,"yPos":235},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Do
+    you want to start a conversation with your CS304 teacher?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"System","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"finishedCS304","CheckType":0,"RequiredValue":false}],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":-158.099976,"yPos":419},"ID":3,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":true}],"TMPFontGUID":null,"Text":"Saw
+    a great movie about data bases today...can''t wait for the SQL ; )","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":6},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":-195.099976,"yPos":532},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+    hi! Are you here to get help on the assignment?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-350.099976,"yPos":729},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     may have heard this from other teachers by now, but we are trying to encourage
     independence","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-109.799988,"yPos":612},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-351.099976,"yPos":825},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"We
     want students to gain the knowledge of working towards their own answers with
     a bit of guidance...","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-113.799988,"yPos":717},"ID":12,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"givenIndependenceSpeech","Value":true},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"On
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-355.099976,"yPos":930},"ID":12,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"givenIndependenceSpeech","Value":true},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"On
     that note, try your best to answer these specialized datebase questions! Solving
     them will help you with your assignment.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304
-    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":135.200012,"yPos":516},"ID":13,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Try
-    your best to answer these specialized questions!","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":294.400024,"yPos":309},"ID":15,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":null,"parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    Teacher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-106.099976,"yPos":729},"ID":13,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"isTalking","Value":false},{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"collidedWithDialogue","Value":false}],"TMPFontGUID":null,"Text":"Try
+    your best to answer these specialized questions!","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"CS304","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -1416,9 +1478,20 @@ MonoBehaviour:
   - {fileID: 2054235595}
   - {fileID: 2054235594}
   - {fileID: 2054235604}
-  - {fileID: 2054235605}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1696773511}
+        m_TargetAssemblyTypeName: CS304Controller, Assembly-CSharp
+        m_MethodName: CallQuizInDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
