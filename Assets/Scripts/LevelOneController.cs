@@ -76,6 +76,12 @@ public class LevelOneController : MonoBehaviour
 
     public void GetRandomQuestion(List<QuestionsContainer> currentArr)
     {
+        /*
+         * if (currentArray == NULL){
+         * Game over screen 
+         * return;
+         * }
+         * */
         player = FindObjectOfType<PlayerController>();
         //UI = FindObjectOfType<Canvas>();
         questionText = GameObject.FindGameObjectWithTag("question").GetComponent<TMP_Text>();

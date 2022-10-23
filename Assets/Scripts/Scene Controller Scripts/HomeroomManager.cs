@@ -19,7 +19,7 @@ public class HomeroomManager : MonoBehaviour
     void Start()
     {
         homeroomConversation = FindObjectOfType<NPCConversation>();
-        blockExit = GameObject.FindGameObjectWithTag("blockExit");
+        //blockExit = GameObject.FindGameObjectWithTag("blockExit");
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         eventTracker = FindObjectOfType<LevelOneController>();
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
@@ -34,9 +34,10 @@ public class HomeroomManager : MonoBehaviour
         
         if (startedConvo)
         {
-            if (ConversationManager.Instance.GetBool("receivedAssignment") && blockExit != null)
+            if (ConversationManager.Instance.GetBool("receivedAssignment")) //&& blockExit != nul
             {
-                Destroy(blockExit);
+                //Destroy(blockExit);
+                //insteaad of received assignment, put an exclamation mark around teacher!
             }
             if (eventTracker.eventsCompleted == eventTracker.TOTAL_EVENTS)
             {
