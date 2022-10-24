@@ -1618,6 +1618,106 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[1].question
+      value: 'Which MySQL statement is used to return only different values? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[2].question
+      value: 'Which MySQL keyword is used to sort the result set? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[3].question
+      value: 'A foreign key is '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[4].question
+      value: 'The HAVING clause '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[1].answerOne
+      value: SELECT DIFFERENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[1].answerTwo
+      value: SELECT UNIQUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[2].answerOne
+      value: ORDER BY
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[2].answerTwo
+      value: 'SORT '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[3].answerOne
+      value: 'Is not a key '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[3].answerTwo
+      value: 'A key in some other database '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[4].answerOne
+      value: 'filters ROWS '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[4].answerTwo
+      value: filters COLUMNS
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[1].answerFour
+      value: SELECT DEFINITE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[2].answerFour
+      value: 'ORDER '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[3].answerFour
+      value: 'A key in some other column '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[4].answerFour
+      value: 'filters COUNTS '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[1].answerThree
+      value: SELECT DISTINCT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[2].answerThree
+      value: 'SORT BY '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[3].answerThree
+      value: A key in some other table
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[4].answerThree
+      value: filters GROUPS
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[1].correctAnswer
+      value: SELECT DISTINCT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[2].correctAnswer
+      value: ORDER BY
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[3].correctAnswer
+      value: A key in some other table
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS304.Array.data[4].correctAnswer
+      value: filters GROUPS
+      objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697207, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: m_RootOrder
       value: 5

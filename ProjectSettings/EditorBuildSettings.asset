@@ -23,9 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CS304 Classroom.unity
     guid: 463b1f1f9e5ba0c4ca93a313d19bab66
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/MAS Classroom.unity
-    guid: 96f7bf72aab62a046a5319302123cc5b
+    path: Assets/Scenes/Ground Floor.unity
+    guid: 315b282df4eb80f4f96134d1d8fd949d
   - enabled: 1
     path: Assets/Scenes/Home Classroom.unity
     guid: c6caa1179c7195d43bd67b14887bc607
