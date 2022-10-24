@@ -24,6 +24,7 @@ TagManager:
   - questionText
   - answerThreeText
   - exitPanel
+  - triesRemainingText
   layers:
   - Default
   - TransparentFX

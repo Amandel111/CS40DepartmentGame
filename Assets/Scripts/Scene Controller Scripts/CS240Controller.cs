@@ -18,7 +18,7 @@ public class CS240Controller : MonoBehaviour
         eventTracker = FindObjectOfType<LevelOneController>();
         cs240Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
-        NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
+        NPCAnim = GameObject.FindGameObjectWithTag("CS240").GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
     }
@@ -70,6 +70,11 @@ public class CS240Controller : MonoBehaviour
 
     public void CallQuizInDialogue()
     {
+        if (eventTracker.questionsCS240.Count == 0)
+        {
+            Debug.Log("out of questions");
+            return;
+        }
         PlayerController player = FindObjectOfType<PlayerController>();
         player.EnableDisableUI(true);
         eventTracker.GetRandomQuestion(eventTracker.questionsCS240);

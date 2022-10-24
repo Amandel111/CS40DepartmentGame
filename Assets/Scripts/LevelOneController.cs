@@ -25,6 +25,7 @@ public class LevelOneController : MonoBehaviour
     private TMP_Text answerThreeText;
     private TMP_Text answerFourText;
 
+    private TMP_Text triesRemainingText;
     public int eventsCompleted;
 
     public int TOTAL_EVENTS = 8;
@@ -49,7 +50,9 @@ public class LevelOneController : MonoBehaviour
     //location spawning vars
     public static string previousScene;
 
-    public bool hasReceivedAssignment; 
+    public bool hasReceivedAssignment;
+
+    private AudioSource backgroundMusic;
 
     private void Awake()
     {
@@ -64,24 +67,25 @@ public class LevelOneController : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Update()
+    {
+    }
     private void Start()
     {
         //triggers.
         player = FindObjectOfType<PlayerController>();
 
         previousScene = SceneManager.GetActiveScene().name;
+
+        backgroundMusic = GetComponent<AudioSource>();
+        backgroundMusic.Play();
     }
 
 
 
     public void GetRandomQuestion(List<QuestionsContainer> currentArr)
     {
-        /*
-         * if (currentArray == NULL){
-         * Game over screen 
-         * return;
-         * }
-         * */
         player = FindObjectOfType<PlayerController>();
         //UI = FindObjectOfType<Canvas>();
         questionText = GameObject.FindGameObjectWithTag("question").GetComponent<TMP_Text>();
@@ -90,6 +94,7 @@ public class LevelOneController : MonoBehaviour
         answerTwoText = GameObject.FindGameObjectWithTag("answerTwo").GetComponent<TMP_Text>();
         answerThreeText = GameObject.FindGameObjectWithTag("answerThree").GetComponent<TMP_Text>();
         answerFourText = GameObject.FindGameObjectWithTag("answerFour").GetComponent<TMP_Text>();
+        triesRemainingText = GameObject.FindGameObjectWithTag("triesRemainingText").GetComponent<TMP_Text>();
 
         int randomQuestionIndex = UnityEngine.Random.Range(0, currentArr.Count);
         currentQuestion = currentArr[randomQuestionIndex];
@@ -98,6 +103,7 @@ public class LevelOneController : MonoBehaviour
         answerTwoText.text = currentArr[randomQuestionIndex].answerTwo;
         answerThreeText.text = currentArr[randomQuestionIndex].answerThree;
         answerFourText.text = currentArr[randomQuestionIndex].answerFour;
+        triesRemainingText.text = "Tries Remaining:" + currentArr.Count.ToString();
         //currentQuestion.classSubjectTrigger = currentArr[randomQuestionIndex].classSubjectTrigger;
         //unansweredQuestion.RemoveAt(randomQuestionIndex);
         currentArr.RemoveAt(randomQuestionIndex);

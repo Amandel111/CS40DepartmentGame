@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private TMP_Text answerTwoText;
     private TMP_Text answerThreeText;
     private TMP_Text answerFourText;
+    private TMP_Text triesRemainingText;
 
     private Image lightbulb;
     private Image handHold;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
         answerTwoText = GameObject.FindGameObjectWithTag("answerTwo").GetComponent<TMP_Text>();
         answerThreeText = GameObject.FindGameObjectWithTag("answerThree").GetComponent<TMP_Text>();
         answerFourText = GameObject.FindGameObjectWithTag("answerFour").GetComponent<TMP_Text>();
+        triesRemainingText = GameObject.FindGameObjectWithTag("triesRemainingText").GetComponent<TMP_Text>();
         lightbulb = GameObject.FindGameObjectWithTag("lightBulb").GetComponent<Image>();
         handHold = GameObject.FindGameObjectWithTag("handHold").GetComponent<Image>();
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -110,6 +112,7 @@ public class PlayerController : MonoBehaviour
 
     public void EnableDisableUI(bool onOff)
     {
+        triesRemainingText.enabled = onOff;
         panelUI.enabled = onOff;
         lightbulb.enabled = !onOff;
         handHold.enabled = !onOff;

@@ -79,6 +79,11 @@ public class CS304Controller : MonoBehaviour
 
     public void CallQuizInDialogue()
     {
+        if (eventTracker.questionsCS304.Count == 0)
+        {
+            Debug.Log("out of questions");
+            return;
+        }
         PlayerController player = FindObjectOfType<PlayerController>();
         player.EnableDisableUI(true);
         eventTracker.GetRandomQuestion(eventTracker.questionsCS304);

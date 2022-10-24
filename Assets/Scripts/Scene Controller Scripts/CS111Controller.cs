@@ -72,8 +72,16 @@ public class CS111Controller : MonoBehaviour
 
     public void CallQuizInDialogue()
     {
-        PlayerController player = FindObjectOfType<PlayerController>();
-        player.EnableDisableUI(true);
-        eventTracker.GetRandomQuestion(eventTracker.questionsCS111);
+        if (eventTracker.questionsCS111.Count == 0)
+        {
+            Debug.Log("out of questions");
+            return;
+        }
+        else
+        {
+            PlayerController player = FindObjectOfType<PlayerController>();
+            player.EnableDisableUI(true);
+            eventTracker.GetRandomQuestion(eventTracker.questionsCS111);
+        }
     }
 }

@@ -9,11 +9,13 @@ public class MenuController : MonoBehaviour
      */
     public string levelToLoad;
     public Animator transitionAnim;
+    private AudioSource music;
+    private Animator musicAnim;
 
     private void Start()
     {
-
-
+        music = GetComponent<AudioSource>();
+        musicAnim = GetComponent<Animator>();
     }
     public void LoadGameButtonYes()
     {
@@ -32,6 +34,7 @@ public class MenuController : MonoBehaviour
     {
         //play scene transition before loading next scene
         transitionAnim.SetTrigger("endTrigger");
+        musicAnim.SetTrigger("fadeMusic");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(levelToLoad);
     }
