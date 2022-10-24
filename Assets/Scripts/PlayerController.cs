@@ -105,11 +105,6 @@ public class PlayerController : MonoBehaviour
             currentCourse = Course.CS304;
             //  ConversationManager.Instance.StartConversation(CS304Dialogue);
         }
-        if (collision.gameObject.CompareTag("MAS"))
-        {
-            currentCourse = Course.MAS;
-            //  ConversationManager.Instance.StartConversation(MASDialogue);
-        }
 
     }
 

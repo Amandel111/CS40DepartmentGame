@@ -61,11 +61,6 @@ public class HubbController : MonoBehaviour
         {
             ConversationManager.Instance.SetBool("cs240Finished", true);
         }
-        if (eventsTracker.masFinished)
-        {
-            ConversationManager.Instance.SetBool("masFinished", true);
-        }
-
     }
 
 }

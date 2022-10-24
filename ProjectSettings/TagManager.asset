@@ -8,7 +8,6 @@ TagManager:
   - CS231
   - CS304
   - CS111
-  - MAS
   - Homeroom
   - popUpImage
   - blockExit
@@ -24,6 +23,7 @@ TagManager:
   - answerOneText
   - questionText
   - answerThreeText
+  - exitPanel
   layers:
   - Default
   - TransparentFX

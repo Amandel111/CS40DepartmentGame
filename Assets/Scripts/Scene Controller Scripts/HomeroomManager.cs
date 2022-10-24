@@ -27,7 +27,10 @@ public class HomeroomManager : MonoBehaviour
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
         NPCAnim = GameObject.FindGameObjectWithTag("Homeroom").GetComponent<Animator>();
 
-
+        if (eventTracker.hasReceivedAssignment)
+        {
+            Destroy(blockExit);
+        }
     }
 
     // Update is called once per frame
@@ -38,6 +41,7 @@ public class HomeroomManager : MonoBehaviour
         {
             if (ConversationManager.Instance.GetBool("receivedAssignment")) //&& blockExit != nul
             {
+                eventTracker.hasReceivedAssignment = true;
                 Destroy(blockExit);
                 //insteaad of received assignment, put an exclamation mark around teacher!
             }

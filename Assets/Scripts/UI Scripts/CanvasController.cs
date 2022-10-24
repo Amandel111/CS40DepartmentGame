@@ -66,9 +66,6 @@ public class CanvasController : MonoBehaviour
                 case PlayerController.Course.CS240:
                     eventController.cs240Finished = true;
                     break;
-                case PlayerController.Course.MAS:
-                    eventController.masFinished = true;
-                    break;
             }
 
         }

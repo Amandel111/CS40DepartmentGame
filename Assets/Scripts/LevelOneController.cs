@@ -15,7 +15,6 @@ public class LevelOneController : MonoBehaviour
     public List<QuestionsContainer> questionsCS231;
     public List<QuestionsContainer> questionsCS240;
     public List<QuestionsContainer> questionsCS304;
-    public List<QuestionsContainer> questionsMAS;
 
     public QuestionsContainer currentQuestion;
 
@@ -36,7 +35,6 @@ public class LevelOneController : MonoBehaviour
     public bool cs304Finished;
     public bool cs111Finished;
     public bool cs231Finished;
-    public bool masFinished;
 
     //bools for checking whether we have helped NPC yet or not
     public bool helpedCS111;
@@ -50,6 +48,8 @@ public class LevelOneController : MonoBehaviour
 
     //location spawning vars
     public static string previousScene;
+
+    public bool hasReceivedAssignment; 
 
     private void Awake()
     {
