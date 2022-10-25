@@ -1725,6 +1725,14 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].question
+      value: 'f1(n) = 2*n^2. Select the correct choice:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS240.Array.data[2].question
+      value: How many bits does it take to represent n values?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[1].question
       value: 'Which MySQL statement is used to return only different values? '
       objectReference: {fileID: 0}
@@ -1739,6 +1747,30 @@ PrefabInstance:
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[4].question
       value: 'The HAVING clause '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerOne
+      value: "f1 = \u03A9(n)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerTwo
+      value: "f1 = \u03A9(nlog(n))"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerOne
+      value: f1 = O(n^2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerTwo
+      value: f1 = O(2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS240.Array.data[2].answerOne
+      value: 2^n
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS240.Array.data[2].answerTwo
+      value: 2^n - 1
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[1].answerOne
@@ -1773,6 +1805,18 @@ PrefabInstance:
       value: filters COLUMNS
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerFour
+      value: "f1 = \u03A9(logn)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerFour
+      value: f1 = O(sqrt(n))
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS240.Array.data[2].answerFour
+      value: 2^(sqrt(n))
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[1].answerFour
       value: SELECT DEFINITE
       objectReference: {fileID: 0}
@@ -1789,8 +1833,20 @@ PrefabInstance:
       value: 'filters COUNTS '
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].answerThree
+      value: "f1 = \u03A9(n^2)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].answerThree
+      value: f1 = O(logn)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS231.Array.data[4].answerThree
       value: log(n)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS240.Array.data[2].answerThree
+      value: log(n) + 1
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[1].answerThree
@@ -1807,6 +1863,18 @@ PrefabInstance:
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[4].answerThree
       value: filters GROUPS
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[0].correctAnswer
+      value: "f1 = \u03A9(logn)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS231.Array.data[1].correctAnswer
+      value: f1 = O(n^2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
+      propertyPath: questionsCS240.Array.data[2].correctAnswer
+      value: log(n) + 1
       objectReference: {fileID: 0}
     - target: {fileID: 5852442912909697206, guid: 91e6c289eab99424cb716f6051b42618, type: 3}
       propertyPath: questionsCS304.Array.data[1].correctAnswer

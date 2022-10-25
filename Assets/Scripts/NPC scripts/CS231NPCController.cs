@@ -17,7 +17,7 @@ public class CS231NPCController : MonoBehaviour
     Animator NPCAnim;
     void Start()
     {
-        cs231NPC = GameObject.FindGameObjectWithTag("CS231").GetComponent<NPCConversation>();
+        cs231NPC = GameObject.FindGameObjectWithTag("CS231").GetComponent<NPCConversation>(); //can be more efficient to say GetComponent<NPC...> bc this script is attached to the right object
         eventsTracker = FindObjectOfType<LevelOneController>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
