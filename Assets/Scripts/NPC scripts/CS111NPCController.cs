@@ -79,7 +79,14 @@ public class CS111NPCController : MonoBehaviour
         //letting program know we have helped our peer
         eventsTracker.helpedCS111 = true;
         eventsTracker.helpedCounter++;
-        //do some animation here, essentially animate character w lightbulb bouncing above head like w lightbulb
+        StartCoroutine(HelpedPeerCoroutine());
         //add particle system
+    }
+
+    private IEnumerator HelpedPeerCoroutine()
+    {
+        playerAnim.SetBool("helpedPeer", true);
+        yield return new WaitForSeconds(1.5f);
+        playerAnim.SetBool("helpedPeer", false);
     }
 }

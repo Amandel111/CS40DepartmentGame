@@ -16,6 +16,9 @@ public class CanvasController : MonoBehaviour
     [SerializeField] private Sprite[] handHolds;
     LevelOneController eventController;
     Animator playerAnim;
+    AudioSource correctSound;
+    AudioSource wrongSound;
+    AudioSource mouseSound;
 
     private void Start()
     {
@@ -23,13 +26,15 @@ public class CanvasController : MonoBehaviour
         handHoldIcon = GameObject.FindGameObjectWithTag("handHold");
         eventController = FindObjectOfType<LevelOneController>();
         playerAnim = FindObjectOfType<Animator>();
+        correctSound = GetComponent<AudioSource>();
+        wrongSound = FindObjectOfType<Camera>().GetComponent<AudioSource>();
+        mouseSound = FindObjectOfType<PlayerController>().GetComponent<AudioSource>();
     }
 
     public void Update()
     {
         lightbulbIcon.GetComponent<Image>().sprite = lightbulbs[eventController.answeredCounter]; //inefficient bc you're assigning it every frame?
         handHoldIcon.GetComponent<Image>().sprite = handHolds[eventController.helpedCounter];
-
     }
     public void selectAnswer()
     {
@@ -40,7 +45,7 @@ public class CanvasController : MonoBehaviour
         {
             Debug.Log("correct");
             //do animation/particle system
-            //StartCoroutine(CorrectAnim());
+            StartCoroutine(CorrectAnim());
             //turn off current dialogue 
             //fill in light bulb icon
             //make it so dialogue system pops up when interacting with teacher, no more questions
@@ -72,16 +77,17 @@ public class CanvasController : MonoBehaviour
         else
         {
             Debug.Log("incorrect");
+            wrongSound.Play();
             //turn off quiz
         }
     }
 
-    /*
     private IEnumerator CorrectAnim()
     {
-        playerAnim.SetBool("correctAnim", true);
+        playerAnim.SetBool("answeredQuestion", true);
+        Debug.Log("correct answer");
+        correctSound.Play();
         yield return new WaitForSeconds(2);
-        playerAnim.SetBool("correctAnim", false);
+        playerAnim.SetBool("answeredQuestion", false);
     }
-    */
 }
