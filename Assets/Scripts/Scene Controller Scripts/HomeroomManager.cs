@@ -31,6 +31,8 @@ public class HomeroomManager : MonoBehaviour
         {
             Destroy(blockExit);
         }
+        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+
     }
 
     // Update is called once per frame

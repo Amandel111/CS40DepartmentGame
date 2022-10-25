@@ -16,16 +16,13 @@ public class HubbController : MonoBehaviour
         switch (LevelOneController.previousScene)
         {
             case "CS231 Classroom":
-                playerTransform.position = new Vector3(-1, -13, 0); //fix hard coding
+                playerTransform.position = new Vector3(14.8f, -9.7f, 0); //fix hard coding
                 break;
             case "CS304 Classroom":
-                playerTransform.position = new Vector3(9, -17, 0);
-                break;
-            case "CS111 Classroom":
-                playerTransform.position = new Vector3(19, -12, 0);
+                playerTransform.position = new Vector3(4.7f, -15.2f, 0);
                 break;
             case "CS240 Classroom":
-                 playerTransform.position = new Vector3(-1.5f, -24, 0);
+                 playerTransform.position = new Vector3(-6.1f, -20.4f, 0);
                 break;
         }
 

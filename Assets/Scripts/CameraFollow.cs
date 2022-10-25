@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -7,26 +8,45 @@ public class CameraFollow : MonoBehaviour
      * */
     private Transform player;
     private Vector3 offset;
-    Vector2 boundsMin;
-    Vector2 boundsMax;
+    Vector2 boundsMinSci;
+    Vector2 boundsMaxSci;
+    Vector2 boundsMaxGround;
+    Vector2 boundsMinGround;
 
     void Start()
     {
-        boundsMin = new Vector2(-7.8f, -20.7f);
-        boundsMax = new Vector2(16.7f, 6.3f);
+        boundsMinSci = new Vector2(-7.8f, -20.7f);
+        boundsMaxSci = new Vector2(16.7f, 6.3f);
+        boundsMinGround = new Vector2(-28.5f, -29f);
+        boundsMaxGround = new Vector2(-2.8f, -1.5f);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
+        //transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
     }
 
     void Update()
     {
-        if (player.position.x > boundsMin.x && player.position.x < boundsMax.x)
+        if (SceneManager.GetActiveScene().name == "Level One")
         {
-            transform.position = new Vector3(player.position.x + offset.x, transform.position.y, transform.position.z);
+            if (player.position.x > boundsMinSci.x && player.position.x < boundsMaxSci.x)
+            {
+                transform.position = new Vector3(player.position.x + offset.x, transform.position.y, transform.position.z);
+            }
+            if (player.position.y > boundsMinSci.y && player.position.y < boundsMaxSci.y)
+            {
+                transform.position = new Vector3(transform.position.x, player.position.y + offset.y, transform.position.z);
+            }
         }
-        if (player.position.y > boundsMin.y && player.position.y < boundsMax.y)
+        if (SceneManager.GetActiveScene().name == "Ground Floor")
         {
-            transform.position = new Vector3(transform.position.x, player.position.y + offset.y, transform.position.z);
+            if (player.position.x > boundsMinGround.x && player.position.x < boundsMaxGround.x)
+            {
+                transform.position = new Vector3(player.position.x + offset.x, transform.position.y, transform.position.z);
+            }
+            if (player.position.y > boundsMinGround.y && player.position.y < boundsMaxGround.y)
+            {
+                transform.position = new Vector3(transform.position.x, player.position.y + offset.y, transform.position.z);
+            }
         }
+
     }
 }
