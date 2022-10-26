@@ -53,7 +53,6 @@ public class NPCDialogueController : MonoBehaviour
             Debug.Log("Has collided");
             startedConvo = true;
             ConversationManager.Instance.StartConversation(conversation);
-
         }
     }
 }
