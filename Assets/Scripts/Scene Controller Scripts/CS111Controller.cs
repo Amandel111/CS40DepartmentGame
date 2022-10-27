@@ -4,17 +4,18 @@ using UnityEngine.SceneManagement;
 
 public class CS111Controller : MonoBehaviour
 {
-    LevelOneController eventTracker;
+    LevelOneController eventsTracker;
     NPCConversation cs111Convo;
     bool startedConvo;
     Animator playerAnim;
     Animator NPCAnim;
     Transform playerTransform;
     public float dialogueRange;
+
     // Start is called before the first frame update
     void Start()
     {
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<LevelOneController>();
         cs111Convo = FindObjectOfType<NPCConversation>();
         NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
@@ -61,7 +62,7 @@ public class CS111Controller : MonoBehaviour
         {
             startedConvo = true;
             ConversationManager.Instance.StartConversation(cs111Convo); 
-            if (eventTracker.cs111Finished) //more elegant way to do this
+            if (eventsTracker.cs111Finished) //more elegant way to do this
             {
                 ConversationManager.Instance.SetBool("finishedCS111", true);
             }
@@ -72,16 +73,8 @@ public class CS111Controller : MonoBehaviour
 
     public void CallQuizInDialogue()
     {
-        if (eventTracker.questionsCS111.Count == 0)
-        {
-            Debug.Log("out of questions");
-            return;
-        }
-        else
-        {
             PlayerController player = FindObjectOfType<PlayerController>();
             player.EnableDisableUI(true);
-            eventTracker.GetRandomQuestion(eventTracker.questionsCS111);
-        }
+            eventsTracker.GetRandomQuestion(eventsTracker.questionsCS111);
     }
 }

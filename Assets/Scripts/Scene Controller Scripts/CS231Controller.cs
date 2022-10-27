@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class CS231Controller : MonoBehaviour
 {
     // Start is called before the first frame update
-    LevelOneController eventTracker;
+    LevelOneController eventsTracker;
     NPCConversation cs231Convo;
     Animator playerAnim;
     bool startedConvo;
@@ -15,7 +15,7 @@ public class CS231Controller : MonoBehaviour
     public float dialogueRange = 4;
     void Start()
     {
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<LevelOneController>();
         cs231Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
@@ -59,7 +59,7 @@ public class CS231Controller : MonoBehaviour
         {
             startedConvo = true;
             ConversationManager.Instance.StartConversation(cs231Convo); //figure out how to prevent convo from restarting --> maybe && !(talkingAnimation active) u can interact w npc
-            if (eventTracker.cs231Finished) //more elegant way to do this
+            if (eventsTracker.cs231Finished) //more elegant way to do this
             {
                 ConversationManager.Instance.SetBool("finishedCS231", true);
             }
@@ -69,13 +69,8 @@ public class CS231Controller : MonoBehaviour
 
     public void CallQuizInDialogue()
     {
-        if (eventTracker.questionsCS231.Count == 0)
-        {
-            Debug.Log("out of questions");
-            return;
-        }
         PlayerController player = FindObjectOfType<PlayerController>();
         player.EnableDisableUI(true);
-        eventTracker.GetRandomQuestion(eventTracker.questionsCS231);
+        eventsTracker.GetRandomQuestion(eventsTracker.questionsCS231);
     }
 }

@@ -19,7 +19,7 @@ public class GroundFloor : MonoBehaviour
                 playerTransform.position = new Vector3(-28.4f, -18f, 0);
                 break;
             case "Level One":
-                playerTransform.position = new Vector3(-25.1f, 0.8f, 0);
+                playerTransform.position = new Vector3(-22f, -2.3f, 0);
                 break;
         }
 

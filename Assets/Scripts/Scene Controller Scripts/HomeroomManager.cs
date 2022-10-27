@@ -1,5 +1,6 @@
 using DialogueEditor;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class HomeroomManager : MonoBehaviour
@@ -16,9 +17,21 @@ public class HomeroomManager : MonoBehaviour
     Transform playerTransform;
     public float dialogueRange = 4;
     Animator NPCAnim;
+    GameObject winPanel;
     // Start is called before the first frame update
     void Start()
     {
+        /*
+        if (LevelOneController.previousScene == "Home Classroom")
+        {
+            playerTransform.position = new Vector2(.1f, -1.7f);
+        }
+        else
+        {
+            playerTransform.position = new Vector2(-5, -4);
+        }
+        */
+
         homeroomConversation = FindObjectOfType<NPCConversation>();
         blockExit = GameObject.FindGameObjectWithTag("blockExit");
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
@@ -26,13 +39,14 @@ public class HomeroomManager : MonoBehaviour
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
         NPCAnim = GameObject.FindGameObjectWithTag("Homeroom").GetComponent<Animator>();
+        winPanel = GameObject.FindGameObjectWithTag("WinPanel");
 
         if (eventTracker.hasReceivedAssignment)
         {
             Destroy(blockExit);
         }
         LevelOneController.previousScene = SceneManager.GetActiveScene().name;
-
+        winPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -83,9 +97,16 @@ public class HomeroomManager : MonoBehaviour
     {
         //right now Idk how to save memory so that dialogue can call this object even though it doesn't edxist in scene yet
         //sparkles go off
+        winPanel.SetActive(true);
+        StartCoroutine(LoadMenuGameComplete());
         //end game screen
     }
 
+    IEnumerator LoadMenuGameComplete()
+    {
+        yield return new WaitForSeconds(10);
+        SceneManager.LoadScene("Main Menu");
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -93,7 +114,10 @@ public class HomeroomManager : MonoBehaviour
         {
             ConversationManager.Instance.StartConversation(homeroomConversation);
             startedConvo = true;
-            Debug.Log("startedConvo: true");
+            if (eventTracker.isFinished) //more elegant way to do this
+            {
+                ConversationManager.Instance.SetBool("isFinished", true);
+            }
         }
 
     }

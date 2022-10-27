@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CS240Controller : MonoBehaviour
 {
-    LevelOneController eventTracker;
+    LevelOneController eventsTracker;
     NPCConversation cs240Convo;
     bool startedConvo;
     Animator playerAnim;
@@ -15,7 +15,7 @@ public class CS240Controller : MonoBehaviour
     Animator NPCAnim;
     void Start()
     {
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<LevelOneController>();
         cs240Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         NPCAnim = GameObject.FindGameObjectWithTag("CS240").GetComponent<Animator>();
@@ -60,7 +60,7 @@ public class CS240Controller : MonoBehaviour
         {
             startedConvo = true;
             ConversationManager.Instance.StartConversation(cs240Convo); //figure out how to prevent convo from restarting --> maybe && !(talkingAnimation active) u can interact w npc
-            if (eventTracker.cs240Finished) //more elegant way to do this
+            if (eventsTracker.cs240Finished) //more elegant way to do this
             {
                 ConversationManager.Instance.SetBool("finishedCS240", true);
             }
@@ -70,13 +70,8 @@ public class CS240Controller : MonoBehaviour
 
     public void CallQuizInDialogue()
     {
-        if (eventTracker.questionsCS240.Count == 0)
-        {
-            Debug.Log("out of questions");
-            return;
-        }
         PlayerController player = FindObjectOfType<PlayerController>();
         player.EnableDisableUI(true);
-        eventTracker.GetRandomQuestion(eventTracker.questionsCS240);
+        eventsTracker.GetRandomQuestion(eventsTracker.questionsCS240);
     }
 }

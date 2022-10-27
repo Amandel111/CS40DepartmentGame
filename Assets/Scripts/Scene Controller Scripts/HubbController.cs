@@ -30,15 +30,6 @@ public class HubbController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-    } 
-
     public void SetNPCDialogue()
     {
         LevelOneController eventsTracker = FindObjectOfType<LevelOneController>();

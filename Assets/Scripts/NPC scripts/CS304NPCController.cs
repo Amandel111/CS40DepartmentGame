@@ -14,6 +14,7 @@ public class CS304NPCController : MonoBehaviour
     Transform playerTransform;
     bool startedConvo;
     Animator NPCAnim;
+    AudioSource correctSound;
 
     public float dialogueRange = 4;
     void Start()
@@ -23,6 +24,7 @@ public class CS304NPCController : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS304").GetComponent<Animator>();
+        correctSound = FindObjectOfType<Canvas>().GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -87,6 +89,10 @@ public class CS304NPCController : MonoBehaviour
         {
             ConversationManager.Instance.SetBool("hasHelped", true);
         }
+        if (eventsTracker.eventsCompleted == eventsTracker.TOTAL_EVENTS)
+        {
+            ConversationManager.Instance.SetBool("hasFinished", true);
+        }
     }
     public void HelpedPeer()
     {
@@ -94,12 +100,14 @@ public class CS304NPCController : MonoBehaviour
         eventsTracker.helpedCS304 = true;
         eventsTracker.helpedCounter++;
         StartCoroutine(HelpedPeerCoroutine());
+        eventsTracker.eventsCompleted++;
         //add particle system
     }
     private IEnumerator HelpedPeerCoroutine()
     {
+        correctSound.Play();
         playerAnim.SetBool("helpedPeer", true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
         playerAnim.SetBool("helpedPeer", false);
     }
 }

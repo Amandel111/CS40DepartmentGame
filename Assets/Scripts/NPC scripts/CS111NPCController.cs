@@ -15,6 +15,7 @@ public class CS111NPCController : MonoBehaviour
     Transform playerTransform;
     public float dialogueRange = 4;
     Animator NPCAnim;
+    AudioSource correctSound;
     void Start()
     {
         cs111NPC = GameObject.FindGameObjectWithTag("CS111").GetComponent<NPCConversation>();
@@ -22,6 +23,8 @@ public class CS111NPCController : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
+
+        correctSound = FindObjectOfType<Canvas>().GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -61,6 +64,10 @@ public class CS111NPCController : MonoBehaviour
             startedConvo = true;
             ConversationManager.Instance.StartConversation(cs111NPC);
         }
+        if (eventsTracker.eventsCompleted == eventsTracker.TOTAL_EVENTS)
+        {
+            ConversationManager.Instance.SetBool("hasFinished", true);
+        }
     }
     public void SetNPCDialogue()
     {
@@ -79,14 +86,16 @@ public class CS111NPCController : MonoBehaviour
         //letting program know we have helped our peer
         eventsTracker.helpedCS111 = true;
         eventsTracker.helpedCounter++;
+        eventsTracker.eventsCompleted++;
         StartCoroutine(HelpedPeerCoroutine());
         //add particle system
     }
 
     private IEnumerator HelpedPeerCoroutine()
     {
+        correctSound.Play();
         playerAnim.SetBool("helpedPeer", true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
         playerAnim.SetBool("helpedPeer", false);
     }
 }

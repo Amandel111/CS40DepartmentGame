@@ -25,6 +25,8 @@ TagManager:
   - answerThreeText
   - exitPanel
   - triesRemainingText
+  - GameOverPanel
+  - WinPanel
   layers:
   - Default
   - TransparentFX

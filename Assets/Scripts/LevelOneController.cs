@@ -26,7 +26,7 @@ public class LevelOneController : MonoBehaviour
     private TMP_Text answerFourText;
 
     private TMP_Text triesRemainingText;
-    public int eventsCompleted;
+    public int eventsCompleted = 0;
 
     public int TOTAL_EVENTS = 8;
     private PlayerController player;
@@ -51,6 +51,7 @@ public class LevelOneController : MonoBehaviour
     public static string previousScene;
 
     public bool hasReceivedAssignment;
+    public bool isFinished;
 
     private AudioSource backgroundMusic;
 
@@ -70,6 +71,10 @@ public class LevelOneController : MonoBehaviour
 
     private void Update()
     {
+        if (eventsCompleted == TOTAL_EVENTS)
+        {
+            isFinished = true;
+        }
     }
     private void Start()
     {

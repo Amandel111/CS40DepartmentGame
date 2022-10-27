@@ -21,6 +21,13 @@ public class CameraFollow : MonoBehaviour
         boundsMaxGround = new Vector2(-2.8f, -1.5f);
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         //transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, transform.position.z);
+        /*
+        if (LevelOneController.previousScene == "Level One" && SceneManager.GetActiveScene().name == "Ground Floor")
+        {
+            Debug.Log("come from level 1");
+            transform.position = new Vector3(-21f, -2, transform.position.z);
+        }
+        */
     }
 
     void Update()

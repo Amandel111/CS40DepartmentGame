@@ -24,11 +24,11 @@ public class NPCDialogueController : MonoBehaviour
         {
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
-                playerAnim.SetBool("isTalking", true);
+                //fill with dialogue bubble
             }
             else
             {
-                playerAnim.SetBool("isTalking", false);
+               
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {

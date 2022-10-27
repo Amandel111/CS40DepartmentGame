@@ -14,6 +14,7 @@ public class CS240NPCController : MonoBehaviour
     bool startedConvo;
     public float dialogueRange = 4;
     Animator NPCAnim;
+    AudioSource correctSound;
 
     Transform playerTransform;
     void Start()
@@ -23,6 +24,7 @@ public class CS240NPCController : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS240").GetComponent<Animator>();
+        correctSound = FindObjectOfType<Canvas>().GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -61,15 +63,19 @@ public class CS240NPCController : MonoBehaviour
             startedConvo = true;
             ConversationManager.Instance.StartConversation(cs240NPC);
         }
+        if (eventsTracker.eventsCompleted == eventsTracker.TOTAL_EVENTS)
+        {
+            ConversationManager.Instance.SetBool("hasFinished", true);
+        }
     }
     public void SetNPCDialogue()
     {
         //check if player currently has the ability to help NPC, play different dialogue accordingly
-        if (eventsTracker.cs111Finished)
+        if (eventsTracker.cs240Finished)
         {
             ConversationManager.Instance.SetBool("cs240Finished", true);
         }
-        if (eventsTracker.helpedCS111 == true)
+        if (eventsTracker.helpedCS240 == true)
         {
             ConversationManager.Instance.SetBool("hasHelped", true);
         }
@@ -78,14 +84,16 @@ public class CS240NPCController : MonoBehaviour
     {
         //letting program know we have helped our peer
         eventsTracker.helpedCS240 = true;
+        eventsTracker.eventsCompleted++;
         eventsTracker.helpedCounter++;
         StartCoroutine(HelpedPeerCoroutine());
         //add particle system
     }
     private IEnumerator HelpedPeerCoroutine()
     {
+        correctSound.Play();
         playerAnim.SetBool("helpedPeer", true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(3f);
         playerAnim.SetBool("helpedPeer", false);
     }
 }
