@@ -16,7 +16,7 @@ public class CanvasController : MonoBehaviour
     [SerializeField] private Sprite[] handHolds;
     LevelOneController eventTracker;
     Animator playerAnim;
-    AudioSource correctSound;
+    public AudioSource correctSound;
     AudioSource wrongSound;
     AudioSource mouseSound;
     GameObject gameOverPanel;

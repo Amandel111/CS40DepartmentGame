@@ -8,14 +8,14 @@ public class NPCDialogueController : MonoBehaviour
     private NPCConversation conversation;
     bool startedConvo;
     Transform playerTransform;
-    Animator playerAnim;
+    Animator npcAnim;
     public int dialogueRange = 4;
     // Start is called before the first frame update
     void Start()
     {
         conversation = GetComponent<NPCConversation>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
-        playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
+        npcAnim = GetComponent<Animator>();
     }
 
     void Update()
@@ -24,11 +24,13 @@ public class NPCDialogueController : MonoBehaviour
         {
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
-                //fill with dialogue bubble
+                Debug.Log("set anim");
+                npcAnim.SetBool("isTalking", true);
             }
             else
             {
-               
+                Debug.Log("Sets off anim too early");
+                npcAnim.SetBool("isTalking", false);
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
@@ -40,8 +42,8 @@ public class NPCDialogueController : MonoBehaviour
                 ConversationManager.Instance.SetBool("collidedWithDialogue", false);
                 ConversationManager.Instance.SetBool("isTalking", false);
                 ConversationManager.Instance.EndConversation();
+                npcAnim.SetBool("isTalking", false);
                 startedConvo = false;
-                playerAnim.SetBool("isTalking", false);
             }
         }
     }

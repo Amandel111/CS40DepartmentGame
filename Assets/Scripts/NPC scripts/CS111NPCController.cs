@@ -15,7 +15,8 @@ public class CS111NPCController : MonoBehaviour
     Transform playerTransform;
     public float dialogueRange = 4;
     Animator NPCAnim;
-    AudioSource correctSound;
+    CanvasController correctSound;
+    //AudioSource correctSound;
     void Start()
     {
         cs111NPC = GameObject.FindGameObjectWithTag("CS111").GetComponent<NPCConversation>();
@@ -23,8 +24,7 @@ public class CS111NPCController : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
-
-        correctSound = FindObjectOfType<Canvas>().GetComponent<AudioSource>();
+        correctSound = FindObjectOfType<CanvasController>();
     }
     void Update()
     {
@@ -93,7 +93,10 @@ public class CS111NPCController : MonoBehaviour
 
     private IEnumerator HelpedPeerCoroutine()
     {
-        correctSound.Play();
+        Debug.Log("calls helped peer function");
+        //correctSound.Play();
+        correctSound.correctSound.Play();
+        Debug.Log("Played sound");
         playerAnim.SetBool("helpedPeer", true);
         yield return new WaitForSeconds(3f);
         playerAnim.SetBool("helpedPeer", false);

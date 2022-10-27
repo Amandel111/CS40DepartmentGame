@@ -15,7 +15,7 @@ public class CS231NPCController : MonoBehaviour
     Transform playerTransform;
     public float dialogueRange = 4;
     Animator NPCAnim;
-    AudioSource correctSound;
+    CanvasController correctSound;
     void Start()
     {
         cs231NPC = GameObject.FindGameObjectWithTag("CS231").GetComponent<NPCConversation>(); //can be more efficient to say GetComponent<NPC...> bc this script is attached to the right object
@@ -24,7 +24,7 @@ public class CS231NPCController : MonoBehaviour
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS231").GetComponent<Animator>();
 
-        correctSound = FindObjectOfType<Canvas>().GetComponent<AudioSource>();
+        correctSound = FindObjectOfType<CanvasController>();
     }
     void Update()
     {
@@ -91,7 +91,7 @@ public class CS231NPCController : MonoBehaviour
     }
     private IEnumerator HelpedPeerCoroutine()
     {
-        correctSound.Play();
+        correctSound.correctSound.Play();
         playerAnim.SetBool("helpedPeer", true);
         yield return new WaitForSeconds(3f);
         playerAnim.SetBool("helpedPeer", false);

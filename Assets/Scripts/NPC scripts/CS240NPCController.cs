@@ -14,7 +14,7 @@ public class CS240NPCController : MonoBehaviour
     bool startedConvo;
     public float dialogueRange = 4;
     Animator NPCAnim;
-    AudioSource correctSound;
+    CanvasController correctSound;
 
     Transform playerTransform;
     void Start()
@@ -24,7 +24,7 @@ public class CS240NPCController : MonoBehaviour
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS240").GetComponent<Animator>();
-        correctSound = FindObjectOfType<Canvas>().GetComponent<AudioSource>();
+        correctSound = FindObjectOfType<CanvasController>();
     }
     void Update()
     {
@@ -91,7 +91,7 @@ public class CS240NPCController : MonoBehaviour
     }
     private IEnumerator HelpedPeerCoroutine()
     {
-        correctSound.Play();
+        correctSound.correctSound.Play();
         playerAnim.SetBool("helpedPeer", true);
         yield return new WaitForSeconds(3f);
         playerAnim.SetBool("helpedPeer", false);
