@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
+/// <summary>
+/// Controls the NPC in Science hub that needs help on CS231 material
+/// </summary>
 public class CS231NPCController : MonoBehaviour
 {
-    /*
-     * This class controls the NPC in Science hub that needs help on CS111 material
-     * */
+    //Declare variables
     NPCConversation cs231NPC;
     SceneController eventsTracker;
     Animator playerAnim;
@@ -18,18 +19,20 @@ public class CS231NPCController : MonoBehaviour
     CanvasController correctSound;
     void Start()
     {
+        //initialize variables
         cs231NPC = GameObject.FindGameObjectWithTag("CS231").GetComponent<NPCConversation>(); //can be more efficient to say GetComponent<NPC...> bc this script is attached to the right object
         eventsTracker = FindObjectOfType<SceneController>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS231").GetComponent<Animator>();
-
         correctSound = FindObjectOfType<CanvasController>();
     }
     void Update()
     {
+        //if player in conversation...
         if (startedConvo)
         {
+            //start talking animations
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
                 playerAnim.SetBool("isTalking", true);
@@ -40,10 +43,14 @@ public class CS231NPCController : MonoBehaviour
                 playerAnim.SetBool("isTalking", false);
                 NPCAnim.SetBool("isTalking", false);
             }
+
+            //cna't restart convo if currently in convo
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
             {
                 startedConvo = false;
             }
+
+            //if player leaves range, convo ends
             if (Vector2.Distance(transform.position, playerTransform.position) > dialogueRange)
             {
                 ConversationManager.Instance.SetBool("collidedWithDialogue", false);
@@ -57,13 +64,18 @@ public class CS231NPCController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //start a conversation
+        //if collision game object is player and not engaged in convo...
         if (collision.gameObject.CompareTag("Player") && !startedConvo)
         {
+            //start convo
             startedConvo = true;
             ConversationManager.Instance.StartConversation(cs231NPC);
         }
     }
+
+    /// <summary>
+    /// Sets triggers for different dialogue branch depending on player's current progress
+    /// </summary>
     public void SetNPCDialogue()
     {
         //check if player currently has the ability to help NPC, play different dialogue accordingly
@@ -80,6 +92,11 @@ public class CS231NPCController : MonoBehaviour
             ConversationManager.Instance.SetBool("hasFinished", true);
         }
     }
+
+
+    /// <summary>
+    /// Triggers start of HelpedPeerCoroutine and increments SceneController's event completion tracker
+    /// </summary>
     public void HelpedPeer()
     {
         //letting program know we have helped our peer
@@ -87,8 +104,12 @@ public class CS231NPCController : MonoBehaviour
         eventsTracker.helpedCounter++;
         eventsTracker.eventsCompleted++;
         StartCoroutine(HelpedPeerCoroutine());
-        //add particle system
     }
+
+    /// <summary>
+    /// Play music and animation showing player has helped NPC
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator HelpedPeerCoroutine()
     {
         correctSound.correctSound.Play();

@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+/// <summary>
+/// Controls Ground Floor Scene spawnpoints
+/// </summary>
 public class GroundFloor : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    //declare variables
     SceneController eventTracker;
     Transform playerTransform;
+
     void Start()
     {
+        //initialize variables
         eventTracker = FindObjectOfType<SceneController>();
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
-        Debug.Log(SceneController.previousScene);
+
+        //Set spawnpoint according depending on what scene player is coming from
         switch (SceneController.previousScene)
         {
             case "CS111 Classroom":
@@ -23,13 +29,8 @@ public class GroundFloor : MonoBehaviour
                 break;
         }
 
+        //set previous scene
         SceneController.previousScene = SceneManager.GetActiveScene().name;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -1,4 +1,8 @@
 [System.Serializable]
+
+/// <summary>
+/// Template for each course's quiz questions and answers
+/// </summary>
 public class QuestionsContainer
 {
     //question/answers node 

@@ -2,11 +2,13 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Controls  main menu, loading levels,
+/// exiting the application, and the corresponding UI
+/// </summary>
 public class MenuController : MonoBehaviour
 {
-    /* This script will be controlling our main menu, loading levels,
-     * exiting the application, and the graphics that go along with each
-     */
+    //declare variables
     public string levelToLoad;
     public Animator transitionAnim;
     private AudioSource music;
@@ -15,14 +17,21 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
+        //initialize variables
         music = GetComponent<AudioSource>();
         musicAnim = GetComponent<Animator>();
         tempLevelLoader = FindObjectOfType<SceneController>();
+
+        //delete previous game memory if it exists
         if (tempLevelLoader != null)
         {
             Destroy(tempLevelLoader);
         }
     }
+
+    /// <summary>
+    /// starts LoadScene coroutine
+    /// </summary>
     public void LoadGameButtonYes()
     {
         //start game
@@ -30,12 +39,18 @@ public class MenuController : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
+    /// <summary>
+    /// starts EndScene coroutine
+    /// </summary>
     public void ExitButton()
     {
-        //quit game
         StartCoroutine(EndScene());
     }
 
+    /// <summary>
+    /// triggers scene transition animation and exits game
+    /// </summary>
+    /// <returns></returns>
     IEnumerator EndScene()
     {
         transitionAnim.SetTrigger("endTrigger");
@@ -44,9 +59,12 @@ public class MenuController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// triggers scene transition animation and loads game
+    /// </summary>
+    /// <returns></returns>
     IEnumerator LoadScene()
     {
-        //play scene transition before loading next scene
         transitionAnim.SetTrigger("endTrigger");
         musicAnim.SetTrigger("fadeMusic");
         yield return new WaitForSeconds(1.5f);

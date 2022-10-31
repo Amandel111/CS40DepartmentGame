@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+/// <summary>
+/// This class controls UI, adding questions to UI quiz and icons tracking player progress, and stores memory for all scripts
+/// </summary>
 public class SceneController : MonoBehaviour
 {
     public static SceneController Instance;
-
-    /*
-    * This class controls UI, both adding questions to UI popup screen and icons on popup tracking player progress, and stores memory for all scripts
-    * */
 
     //lists of each class' questions
     public List<QuestionsContainer> questionsCS111;
@@ -52,9 +52,11 @@ public class SceneController : MonoBehaviour
     //location spawning vars
     public static string previousScene;
 
+    //variables checking for completion
     public bool hasReceivedAssignment;
     public bool isFinished;
 
+    //music
     private AudioSource backgroundMusic;
 
     private void Awake()
@@ -73,6 +75,8 @@ public class SceneController : MonoBehaviour
 
     private void Update()
     {
+
+        //check if assignment completed
         if (eventsCompleted == TOTAL_EVENTS)
         {
             isFinished = true;
@@ -80,11 +84,12 @@ public class SceneController : MonoBehaviour
     }
     private void Start()
     {
-        //triggers.
         player = FindObjectOfType<PlayerController>();
 
+        //stores previous scene to update player spawning location
         previousScene = SceneManager.GetActiveScene().name;
 
+        //music
         backgroundMusic = GetComponent<AudioSource>();
         backgroundMusic.Play();
     }

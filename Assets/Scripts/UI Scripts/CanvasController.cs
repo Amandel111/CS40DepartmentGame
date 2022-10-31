@@ -4,12 +4,12 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+/// <summary>
+/// Controls in-game UI and quiz-calling
+/// </summary>
 public class CanvasController : MonoBehaviour
 {
-    /*
-     * This class monitors the answer player selects in the quiz game and does different actions depending on if they're right or wrong
-     * */
-
+    //declare variables
     GameObject lightbulbIcon;
     GameObject handHoldIcon;
     [SerializeField] private Sprite[] lightbulbs;
@@ -23,6 +23,7 @@ public class CanvasController : MonoBehaviour
 
     private void Start()
     {
+        //initialize variables
         lightbulbIcon = GameObject.FindGameObjectWithTag("lightBulb");
         handHoldIcon = GameObject.FindGameObjectWithTag("handHold");
         eventTracker = FindObjectOfType<SceneController>();
@@ -32,29 +33,38 @@ public class CanvasController : MonoBehaviour
         mouseSound = FindObjectOfType<PlayerController>().GetComponent<AudioSource>();
         gameOverPanel = GameObject.FindGameObjectWithTag("GameOverPanel");
 
+        //only want gameOveerPanel UI to trigger if conditions met
         gameOverPanel.SetActive(false);
     }
 
     public void Update()
     {
-        lightbulbIcon.GetComponent<Image>().sprite = lightbulbs[eventTracker.answeredCounter]; //inefficient bc you're assigning it every frame?
+        //set that scene's event tracker UI to reflect player's current progress
+        lightbulbIcon.GetComponent<Image>().sprite = lightbulbs[eventTracker.answeredCounter];
         handHoldIcon.GetComponent<Image>().sprite = handHolds[eventTracker.helpedCounter];
     }
+
+    /// <summary>
+    /// Checks if player selects the correct answer or not and triggers appropriate events, also disabling UI
+    /// </summary>
     public void selectAnswer()
     {
         PlayerController player = FindObjectOfType<PlayerController>();
-        player.EnableDisableUI(false); //move inside coroutine
-        // Debug.Log(EventSystem.current.currentSelectedGameObject.name);
+
+        //diasble UI
+        player.EnableDisableUI(false);
+
+        //if player gets question correct...
         if (EventSystem.current.currentSelectedGameObject.GetComponent<TMP_Text>().text == eventTracker.currentQuestion.correctAnswer) //how do i get this to reference the button i'm clicking
         {
-            Debug.Log("correct");
-            //do animation/particle system
+            //trigger CorrectAnim coroutine
             StartCoroutine(CorrectAnim());
+
+            //update SceneController's current memory of player progress
             eventTracker.eventsCompleted++;
             eventTracker.answeredCounter++;
 
-            //is there a cheap way to do this besides using another switch
-            //want to know if you have completed specific coursework so we can chang eoutcome of NPC conversations
+            //updated SceneController's memory of which course's quiz has been completed
             switch (player.currentCourse)
             {
                 case PlayerController.Course.CS111:
@@ -72,11 +82,16 @@ public class CanvasController : MonoBehaviour
             }
 
         }
+        //if player gets questions wrong...
         else
         {
+            //player "wrong" audio
             wrongSound.Play();
+
+            //If player is currently on currentCourse...
             switch (player.currentCourse)
             {
+                //if that course has no questions left for the player to answer, game over event triggered
                 case PlayerController.Course.CS111:
                     if (eventTracker.questionsCS111.Count == 0)
                     {
@@ -109,11 +124,14 @@ public class CanvasController : MonoBehaviour
                         return;
                     }
                     break;
-                    //turn off quiz
             }
         }
     }
 
+    /// <summary>
+    /// Triggers animation and music that playes if player gets a question correct
+    /// </summary>
+    /// <returns></returns>
         private IEnumerator CorrectAnim()
         {
             playerAnim.SetBool("answeredQuestion", true);

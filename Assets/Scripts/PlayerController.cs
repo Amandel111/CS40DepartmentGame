@@ -2,11 +2,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Controls player movement, animation, collision events, and quiz UI
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
-    /*
-     * Controls player movement, animation, collision events
-     * */
+    //declare variables
     Rigidbody2D myRigidBody;
     public float speed = 1.5f;
 
@@ -25,8 +26,6 @@ public class PlayerController : MonoBehaviour
     private Image handHold;
 
     private Animator anim;
-
-    //public static PlayerController Instance;
     public enum Course
     {
         CS240,
@@ -36,9 +35,9 @@ public class PlayerController : MonoBehaviour
         MAS
     }
 
-    // Start is called before the first frame update
     void Start()
     {
+        //initialize variables
         panelUI = FindObjectOfType<VerticalLayoutGroup>();
         popUPImage = GameObject.FindGameObjectWithTag("popUpImage");
         questionText = GameObject.FindGameObjectWithTag("question").GetComponent<TMP_Text>();
@@ -50,8 +49,10 @@ public class PlayerController : MonoBehaviour
         lightbulb = GameObject.FindGameObjectWithTag("lightBulb").GetComponent<Image>();
         handHold = GameObject.FindGameObjectWithTag("handHold").GetComponent<Image>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        EnableDisableUI(false);
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+
+        //quiz dialogue off unless conditions met
+        EnableDisableUI(false);
     }
 
     void FixedUpdate()
@@ -60,56 +61,57 @@ public class PlayerController : MonoBehaviour
         myRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * speed, Input.GetAxisRaw("Vertical") * speed);
         if (myRigidBody.velocity.x < -0.1)
         {
+            //flip sprite to match walking direction
             GetComponent<SpriteRenderer>().flipX = true;
             if (myRigidBody.velocity.y == 0)
             {
+                //set walking anim
                 anim.SetBool("walking", true);
             }
             
         }
         else if (myRigidBody.velocity.x > 0.1)
         {
+            //flip sprite to match walking direction
             GetComponent<SpriteRenderer>().flipX = false;
             if (myRigidBody.velocity.y == 0)
             {
+                //set walking anim
                 anim.SetBool("walking", true);
             }
         }
         if ((myRigidBody.velocity.x > -0.1 && myRigidBody.velocity.x < 0.1) || myRigidBody.velocity.y > 0 || myRigidBody.velocity.y < 0)
         {
-            //
             anim.SetBool("walking", false);
         }
-        //anim.SetBool("walking", false);
-        anim.SetFloat("ydirection", myRigidBody.velocity.y); //will play down animation if velocity is negative, play up anim if pos, play default if 0
-                                                             //anim.SetFloat("xdirection", myRigidBody.velocity.x); //should it be .y or .x
+        anim.SetFloat("ydirection", myRigidBody.velocity.y);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //trigger Pop-Up multiple choice questions in-game
+        //set course player is currently attempting
         if (collision.gameObject.CompareTag("CS240"))
         {
             currentCourse = Course.CS240;
-            //ConversationManager.Instance.StartConversation(CS240Dialogue);
         }
         if (collision.gameObject.CompareTag("CS231"))
         {
             currentCourse = Course.CS231;
-            // ConversationManager.Instance.StartConversation(CS231Dialogue);
         }
         if (collision.gameObject.CompareTag("CS111"))
         {
             currentCourse = Course.CS111;
-            //ConversationManager.Instance.StartConversation(CS111Dialogue);
         }
         if (collision.gameObject.CompareTag("CS304"))
         {
             currentCourse = Course.CS304;
-            //  ConversationManager.Instance.StartConversation(CS304Dialogue);
         }
 
     }
 
+    /// <summary>
+    /// controls quiz UI (buttons, text, background images)
+    /// </summary>
+    /// <param name="onOff"></param>
     public void EnableDisableUI(bool onOff)
     {
         triesRemainingText.enabled = onOff;
