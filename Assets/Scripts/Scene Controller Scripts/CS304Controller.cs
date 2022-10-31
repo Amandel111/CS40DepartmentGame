@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CS304Controller : MonoBehaviour
 {
     // Start is called before the first frame update
-    LevelOneController eventTracker;
+    SceneController eventTracker;
     NPCConversation cs304Convo;
     int timesInConversation = 0;
     bool startedConvo;
@@ -18,13 +18,13 @@ public class CS304Controller : MonoBehaviour
     public float dialogueRange = 4;
     void Start()
     {
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventTracker = FindObjectOfType<SceneController>();
         cs304Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
 
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
         NPCAnim = GameObject.FindGameObjectWithTag("CS304").GetComponent<Animator>();
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
     }
     private void Update()
     {

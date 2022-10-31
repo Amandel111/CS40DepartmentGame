@@ -9,7 +9,7 @@ public class CS304NPCController : MonoBehaviour
      * This class controls the NPC in Science hub that needs help on CS111 material
      * */
     NPCConversation cs304NPC;
-    LevelOneController eventsTracker;
+    SceneController eventsTracker;
     Animator playerAnim;
     Transform playerTransform;
     bool startedConvo;
@@ -20,7 +20,7 @@ public class CS304NPCController : MonoBehaviour
     void Start()
     {
         cs304NPC = GameObject.FindGameObjectWithTag("CS304").GetComponent<NPCConversation>();
-        eventsTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<SceneController>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS304").GetComponent<Animator>();

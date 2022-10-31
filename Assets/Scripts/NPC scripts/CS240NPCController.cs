@@ -9,7 +9,7 @@ public class CS240NPCController : MonoBehaviour
      * This class controls the NPC in Science hub that needs help on CS111 material
      * */
     NPCConversation cs240NPC;
-    LevelOneController eventsTracker;
+    SceneController eventsTracker;
     Animator playerAnim;
     bool startedConvo;
     public float dialogueRange = 4;
@@ -20,7 +20,7 @@ public class CS240NPCController : MonoBehaviour
     void Start()
     {
         cs240NPC = GameObject.FindGameObjectWithTag("CS240").GetComponent<NPCConversation>();
-        eventsTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<SceneController>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
         NPCAnim = GameObject.FindGameObjectWithTag("CS240").GetComponent<Animator>();

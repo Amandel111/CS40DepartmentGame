@@ -11,11 +11,17 @@ public class MenuController : MonoBehaviour
     public Animator transitionAnim;
     private AudioSource music;
     private Animator musicAnim;
+    SceneController tempLevelLoader;
 
     private void Start()
     {
         music = GetComponent<AudioSource>();
         musicAnim = GetComponent<Animator>();
+        tempLevelLoader = FindObjectOfType<SceneController>();
+        if (tempLevelLoader != null)
+        {
+            Destroy(tempLevelLoader);
+        }
     }
     public void LoadGameButtonYes()
     {
@@ -27,7 +33,15 @@ public class MenuController : MonoBehaviour
     public void ExitButton()
     {
         //quit game
+        StartCoroutine(EndScene());
+    }
+
+    IEnumerator EndScene()
+    {
+        transitionAnim.SetTrigger("endTrigger");
+        yield return new WaitForSeconds(2);
         Application.Quit();
+
     }
 
     IEnumerator LoadScene()

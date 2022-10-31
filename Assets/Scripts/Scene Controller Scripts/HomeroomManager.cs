@@ -3,53 +3,43 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// This class controls the homeroom classroom, prevents player from leaving scene too early, controls dialogue w/ teacher, and 
+/// holds functions event buttons call from dialogue to submit assignment at end of game
+/// </summary>
 public class HomeroomManager : MonoBehaviour
 {
-    /*
-     * This class controls the homeroom classroom, prevents player from leaving scene too early, controls dialogue w/ teacher, and 
-     * holds functions event buttons call from dialogue to submit assignment at end of game
-     * */
     NPCConversation homeroomConversation;
     GameObject blockExit;
     bool startedConvo;
-    LevelOneController eventTracker;
+    SceneController eventTracker;
     Animator playerAnim;
     Transform playerTransform;
     public float dialogueRange = 4;
     Animator NPCAnim;
     GameObject winPanel;
-    // Start is called before the first frame update
+
     void Start()
     {
-        /*
-        if (LevelOneController.previousScene == "Home Classroom")
-        {
-            playerTransform.position = new Vector2(.1f, -1.7f);
-        }
-        else
-        {
-            playerTransform.position = new Vector2(-5, -4);
-        }
-        */
-
+        //initialize variables
         homeroomConversation = FindObjectOfType<NPCConversation>();
         blockExit = GameObject.FindGameObjectWithTag("blockExit");
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
-        eventTracker = FindObjectOfType<LevelOneController>();
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        eventTracker = FindObjectOfType<SceneController>();
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
         NPCAnim = GameObject.FindGameObjectWithTag("Homeroom").GetComponent<Animator>();
         winPanel = GameObject.FindGameObjectWithTag("WinPanel");
-
+        
+        //
         if (eventTracker.hasReceivedAssignment)
         {
             Destroy(blockExit);
         }
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
         winPanel.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -93,15 +83,18 @@ public class HomeroomManager : MonoBehaviour
 
 
     }
-    public void submitAssignment()
+    /// <summary>
+    /// sets win UI and starts LoadMenuGameComplete coroutine
+    /// </summary>
+    public void SubmitAssignment()
     {
-        //right now Idk how to save memory so that dialogue can call this object even though it doesn't edxist in scene yet
-        //sparkles go off
         winPanel.SetActive(true);
         StartCoroutine(LoadMenuGameComplete());
-        //end game screen
     }
-
+    /// <summary>
+    /// Loads main menu after game is complete
+    /// </summary>
+    /// <returns></returns>
     IEnumerator LoadMenuGameComplete()
     {
         yield return new WaitForSeconds(10);
@@ -109,12 +102,14 @@ public class HomeroomManager : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        //if the game collided object is a player and isn't already in a conversation...
         if (collision.gameObject.CompareTag("Player") && !startedConvo)
         {
+            //start a conversation
             ConversationManager.Instance.StartConversation(homeroomConversation);
             startedConvo = true;
-            if (eventTracker.isFinished) //more elegant way to do this
+            //if the assignment is finished
+            if (eventTracker.isFinished)
             {
                 ConversationManager.Instance.SetBool("isFinished", true);
             }

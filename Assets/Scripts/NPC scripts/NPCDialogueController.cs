@@ -24,12 +24,10 @@ public class NPCDialogueController : MonoBehaviour
         {
             if (ConversationManager.Instance.GetBool("isTalking"))
             {
-                Debug.Log("set anim");
                 npcAnim.SetBool("isTalking", true);
             }
             else
             {
-                Debug.Log("Sets off anim too early");
                 npcAnim.SetBool("isTalking", false);
             }
             if (!ConversationManager.Instance.GetBool("collidedWithDialogue"))
@@ -43,6 +41,7 @@ public class NPCDialogueController : MonoBehaviour
                 ConversationManager.Instance.SetBool("isTalking", false);
                 ConversationManager.Instance.EndConversation();
                 npcAnim.SetBool("isTalking", false);
+                Debug.Log("turns off convo bc out of range");
                 startedConvo = false;
             }
         }

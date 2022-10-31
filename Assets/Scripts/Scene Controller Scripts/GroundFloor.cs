@@ -6,14 +6,14 @@ public class GroundFloor : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    LevelOneController eventTracker;
+    SceneController eventTracker;
     Transform playerTransform;
     void Start()
     {
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventTracker = FindObjectOfType<SceneController>();
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
-        Debug.Log(LevelOneController.previousScene);
-        switch (LevelOneController.previousScene)
+        Debug.Log(SceneController.previousScene);
+        switch (SceneController.previousScene)
         {
             case "CS111 Classroom":
                 playerTransform.position = new Vector3(-28.4f, -18f, 0);
@@ -23,7 +23,7 @@ public class GroundFloor : MonoBehaviour
                 break;
         }
 
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
 
     }
 

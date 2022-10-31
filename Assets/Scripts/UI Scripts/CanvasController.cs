@@ -14,7 +14,7 @@ public class CanvasController : MonoBehaviour
     GameObject handHoldIcon;
     [SerializeField] private Sprite[] lightbulbs;
     [SerializeField] private Sprite[] handHolds;
-    LevelOneController eventTracker;
+    SceneController eventTracker;
     Animator playerAnim;
     public AudioSource correctSound;
     AudioSource wrongSound;
@@ -25,7 +25,7 @@ public class CanvasController : MonoBehaviour
     {
         lightbulbIcon = GameObject.FindGameObjectWithTag("lightBulb");
         handHoldIcon = GameObject.FindGameObjectWithTag("handHold");
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventTracker = FindObjectOfType<SceneController>();
         playerAnim = FindObjectOfType<Animator>();
         correctSound = GetComponent<AudioSource>();
         wrongSound = FindObjectOfType<Camera>().GetComponent<AudioSource>();

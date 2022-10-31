@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class LevelOneController : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
-    public static LevelOneController Instance;
+    public static SceneController Instance;
 
     /*
     * This class controls UI, both adding questions to UI popup screen and icons on popup tracking player progress, and stores memory for all scripts
@@ -26,9 +26,11 @@ public class LevelOneController : MonoBehaviour
     private TMP_Text answerFourText;
 
     private TMP_Text triesRemainingText;
-    public int eventsCompleted = 0;
 
+    //event completion variables 
+    public int eventsCompleted = 0;
     public int TOTAL_EVENTS = 8;
+
     private PlayerController player;
 
     //bools for checking whether we have taken various quizzes yet or not

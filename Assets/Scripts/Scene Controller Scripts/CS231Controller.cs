@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class CS231Controller : MonoBehaviour
 {
     // Start is called before the first frame update
-    LevelOneController eventsTracker;
+    SceneController eventsTracker;
     NPCConversation cs231Convo;
     Animator playerAnim;
     bool startedConvo;
@@ -15,11 +15,11 @@ public class CS231Controller : MonoBehaviour
     public float dialogueRange = 4;
     void Start()
     {
-        eventsTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<SceneController>();
         cs231Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
         NPCAnim = NPCAnim = GameObject.FindGameObjectWithTag("CS231").GetComponent<Animator>();
     }
 

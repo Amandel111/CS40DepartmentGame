@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class CS111Controller : MonoBehaviour
 {
-    LevelOneController eventsTracker;
+    SceneController eventsTracker;
     NPCConversation cs111Convo;
     bool startedConvo;
     Animator playerAnim;
@@ -15,14 +15,14 @@ public class CS111Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        eventsTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<SceneController>();
         cs111Convo = FindObjectOfType<NPCConversation>();
         NPCAnim = GameObject.FindGameObjectWithTag("CS111").GetComponent<Animator>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
 
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
 
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame

@@ -9,7 +9,6 @@ public class ExitGame : MonoBehaviour
     public string levelToLoad;
     public Animator transitionAnim;
     private GameObject exitPanel;
-
     // Start is called before the first frame update
     private void Start()
     {
@@ -34,6 +33,7 @@ public class ExitGame : MonoBehaviour
         //play scene transition before loading next scene
         transitionAnim.SetTrigger("endTrigger");
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(levelToLoad);
+        Application.Quit();
+        //SceneManager.LoadScene(levelToLoad);
     }
 }

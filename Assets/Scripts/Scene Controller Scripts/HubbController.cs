@@ -6,14 +6,14 @@ public class HubbController : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    LevelOneController eventTracker;
+    SceneController eventTracker;
     Transform playerTransform;
     void Start()
     {
-        eventTracker = FindObjectOfType<LevelOneController>();
+        eventTracker = FindObjectOfType<SceneController>();
         playerTransform = FindObjectOfType<PlayerController>().GetComponent<Transform>();
-        Debug.Log(LevelOneController.previousScene);
-        switch (LevelOneController.previousScene)
+        Debug.Log(SceneController.previousScene);
+        switch (SceneController.previousScene)
         {
             case "CS231 Classroom":
                 playerTransform.position = new Vector3(14.8f, -9.7f, 0); //fix hard coding
@@ -26,13 +26,13 @@ public class HubbController : MonoBehaviour
                 break;
         }
 
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
 
     }
 
     public void SetNPCDialogue()
     {
-        LevelOneController eventsTracker = FindObjectOfType<LevelOneController>();
+        SceneController eventsTracker = FindObjectOfType<SceneController>();
        // if (eventsTracker.cs111Finished)
         //{
          //   ConversationManager.Instance.SetBool("cs111Finished", true);

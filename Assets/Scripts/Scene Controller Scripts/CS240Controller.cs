@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CS240Controller : MonoBehaviour
 {
-    LevelOneController eventsTracker;
+    SceneController eventsTracker;
     NPCConversation cs240Convo;
     bool startedConvo;
     Animator playerAnim;
@@ -15,12 +15,12 @@ public class CS240Controller : MonoBehaviour
     Animator NPCAnim;
     void Start()
     {
-        eventsTracker = FindObjectOfType<LevelOneController>();
+        eventsTracker = FindObjectOfType<SceneController>();
         cs240Convo = FindObjectOfType<NPCConversation>();
         playerAnim = FindObjectOfType<PlayerController>().GetComponent<Animator>();
         NPCAnim = GameObject.FindGameObjectWithTag("CS240").GetComponent<Animator>();
         playerTransform = FindObjectOfType<PlayerController>().transform;
-        LevelOneController.previousScene = SceneManager.GetActiveScene().name;
+        SceneController.previousScene = SceneManager.GetActiveScene().name;
     }
 
     private void Update()
